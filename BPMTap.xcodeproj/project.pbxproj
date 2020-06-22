@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9012D8A424A0139700F5D319 /* Hexagon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9012D8A324A0139700F5D319 /* Hexagon.swift */; };
+		9012D8A624A0DF4300F5D319 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9012D8A524A0DF4300F5D319 /* Colors.swift */; };
 		909E03C124663FC60090A580 /* BPMTap WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 909E03C024663FC60090A580 /* BPMTap WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		909E03C724663FC60090A580 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 909E03C524663FC60090A580 /* Interface.storyboard */; };
 		909E03C924663FC80090A580 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 909E03C824663FC80090A580 /* Assets.xcassets */; };
@@ -64,6 +66,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9012D8A324A0139700F5D319 /* Hexagon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hexagon.swift; sourceTree = "<group>"; };
+		9012D8A524A0DF4300F5D319 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		909E03BC24663FC60090A580 /* BPMTap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BPMTap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		909E03C024663FC60090A580 /* BPMTap WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BPMTap WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		909E03C624663FC60090A580 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -126,6 +130,8 @@
 			isa = PBXGroup;
 			children = (
 				909E03D424663FC80090A580 /* ContentView.swift */,
+				9012D8A524A0DF4300F5D319 /* Colors.swift */,
+				9012D8A324A0139700F5D319 /* Hexagon.swift */,
 				909E03D624663FC80090A580 /* HostingController.swift */,
 				909E03D824663FC80090A580 /* ExtensionDelegate.swift */,
 				909E03DA24663FC80090A580 /* NotificationController.swift */,
@@ -276,9 +282,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				909E03D724663FC80090A580 /* HostingController.swift in Sources */,
+				9012D8A624A0DF4300F5D319 /* Colors.swift in Sources */,
 				909E03D524663FC80090A580 /* ContentView.swift in Sources */,
 				909E03DB24663FC80090A580 /* NotificationController.swift in Sources */,
 				909E03D924663FC80090A580 /* ExtensionDelegate.swift in Sources */,
+				9012D8A424A0139700F5D319 /* Hexagon.swift in Sources */,
 				909E03DD24663FC80090A580 /* NotificationView.swift in Sources */,
 				909E03DF24663FC80090A580 /* ComplicationController.swift in Sources */,
 			);

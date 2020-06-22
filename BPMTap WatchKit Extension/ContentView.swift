@@ -2,15 +2,107 @@
 //  ContentView.swift
 //  BPMTap WatchKit Extension
 //
-//  Created by Eric Masiello on 5/8/20.
+//  Created by Eric Masiello on 4/19/20.
 //  Copyright © 2020 Eric Masiello. All rights reserved.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+
+let TOTAL_CLICKS = 4;
+
+struct LightBackground<S: Shape>: View {
+    var isHighlighted: Bool
+    var shape: S
+    
     var body: some View {
-        Text("Hello, World!")
+        ZStack {
+            if !isHighlighted {
+                shape
+                    .fill(LinearGradient(Color.lightEnd, Color.lightStart))
+                    .overlay(shape.stroke(LinearGradient(Color.lightStart, Color.lightEnd), lineWidth: 2))
+            } else {
+                shape
+                    .fill(LinearGradient(Color.lightEnd, Color.lightStart))
+                    .overlay(shape.stroke(LinearGradient(Color.lightStart, Color.lightEnd), lineWidth: 2))
+                    .overlay(shape.stroke(LinearGradient(Color.lightEnd, Color.lightStart), lineWidth: 2).opacity(0.3))
+            }
+        }
+    }
+}
+
+struct LightButtonStyle: ButtonStyle {
+    func makeBody(configuration: Self.Configuration) -> some View {
+        configuration.label
+            .padding(30)
+            .contentShape(Circle())
+            .background(
+                LightBackground(isHighlighted: configuration.isPressed, shape: Circle())
+            )
+    }
+}
+
+func timeToBPM(start: DispatchTime, end: DispatchTime, beatCount: Int) -> Double {
+    let diff = end.uptimeNanoseconds - start.uptimeNanoseconds
+    let seconds = Double(diff) / 1_000_000_000
+    return ((Double(beatCount) - 1) * 60) / seconds
+}
+
+struct ContentView: View {
+    @State private var isToggled = false
+    @State private var clicks = 0
+    @State private var start = DispatchTime.now()
+    @State private var end = DispatchTime.now()
+    @State private var bpm: Double = 0
+    
+    func handleClick() {
+        if (self.clicks == 0) {
+            self.start = DispatchTime.now()
+        }
+        self.clicks += 1
+        
+        if (self.clicks == TOTAL_CLICKS) {
+            self.clicks = 0
+            self.end = DispatchTime.now()
+            self.bpm = timeToBPM(start: self.start, end: self.end, beatCount: TOTAL_CLICKS);
+        }
+    }
+    
+    var body: some View {
+        ZStack(alignment: .center) {
+            LinearGradient(Color.brandPurple, Color.brandBlue).overlay(Color.black.opacity(0.5))
+            ZStack {
+                Button(action: handleClick) {
+                    Hexagon()
+                        .frame(width: 40, height: 40)
+                        .opacity(0.80)
+                        .overlay(Hexagon().stroke(Color.brandPink, lineWidth: 2))
+                        .overlay(
+                            Text(String(self.clicks))
+                                .foregroundColor(Color.darkEnd)
+                        )
+                    
+                }
+                .buttonStyle(LightButtonStyle())
+                
+                
+                if bpm > 0 {
+                    Text(String(format: "%.2f BPM", bpm))
+                        .fontWeight(.semibold)
+                        .foregroundColor(Color.white).font(.caption)
+                        .offset(y: 74)
+                        .transition(.opacity)
+                } else {
+                    Text("Tap 4 times")
+                    .foregroundColor(Color.white).font(.caption)
+                    .offset(y: 74)
+                }
+            }
+            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
+            
+        }
+        .edgesIgnoringSafeArea(.all)
+        .navigationBarTitle("BPM Tap")
     }
 }
 
@@ -19,3 +111,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
