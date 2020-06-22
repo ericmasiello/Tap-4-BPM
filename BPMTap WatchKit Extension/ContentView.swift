@@ -12,28 +12,28 @@ import SwiftUI
 let TOTAL_CLICKS = 4;
 let ANIMATION_DURATION = 0.2
 
-struct LightBackground<S: Shape>: View {
+struct Ring<S: Shape>: View {
     var isHighlighted: Bool
     var shape: S
     
     var body: some View {
         ZStack {
             shape
-            .fill(LinearGradient(Color.lightEnd, Color.lightStart))
-            .overlay(shape.stroke(LinearGradient(Color.lightStart, Color.lightEnd), lineWidth: 2))
-                .opacity(isHighlighted ? 0.9 : 1)
-                .animation(.easeInOut(duration: ANIMATION_DURATION))
+                .stroke(Color.brandTeal, lineWidth: 3)
+                .overlay(shape.fill().opacity(0.2))
         }
     }
 }
 
-struct LightButtonStyle: ButtonStyle {
+struct PaddedButtonStyle: ButtonStyle {
     func makeBody(configuration: Self.Configuration) -> some View {
         configuration.label
             .padding(30)
-            .contentShape(Circle())
+            .contentShape(
+                Circle()
+        )
             .background(
-                LightBackground(isHighlighted: configuration.isPressed, shape: Circle())
+                Ring(isHighlighted: configuration.isPressed, shape: Circle())
             )
     }
 }
@@ -76,7 +76,7 @@ struct ContentView: View {
                 Button(action: handleClick) {
                     Hexagon()
                         .frame(width: 40, height: 40)
-                        .opacity(0.70)
+                        .opacity(0.85)
                         .overlay(Hexagon().stroke(Color.brandPink, lineWidth: 2))
                         .scaleEffect(self.scale())
                         .animation(.easeIn(duration: ANIMATION_DURATION))
@@ -86,7 +86,7 @@ struct ContentView: View {
                         )
                     
                 }
-                .buttonStyle(LightButtonStyle())
+                .buttonStyle(PaddedButtonStyle())
                 
                 
                 if bpm > 0 {
