@@ -10,6 +10,7 @@ import SwiftUI
 
 
 let TOTAL_CLICKS = 4;
+let ANIMATION_DURATION = 0.2
 
 struct LightBackground<S: Shape>: View {
     var isHighlighted: Bool
@@ -17,16 +18,11 @@ struct LightBackground<S: Shape>: View {
     
     var body: some View {
         ZStack {
-            if !isHighlighted {
-                shape
-                    .fill(LinearGradient(Color.lightEnd, Color.lightStart))
-                    .overlay(shape.stroke(LinearGradient(Color.lightStart, Color.lightEnd), lineWidth: 2))
-            } else {
-                shape
-                    .fill(LinearGradient(Color.lightEnd, Color.lightStart))
-                    .overlay(shape.stroke(LinearGradient(Color.lightStart, Color.lightEnd), lineWidth: 2))
-                    .overlay(shape.stroke(LinearGradient(Color.lightEnd, Color.lightStart), lineWidth: 2).opacity(0.3))
-            }
+            shape
+            .fill(LinearGradient(Color.lightEnd, Color.lightStart))
+            .overlay(shape.stroke(LinearGradient(Color.lightStart, Color.lightEnd), lineWidth: 2))
+                .opacity(isHighlighted ? 0.9 : 1)
+                .animation(.easeInOut(duration: ANIMATION_DURATION))
         }
     }
 }
@@ -68,6 +64,11 @@ struct ContentView: View {
         }
     }
     
+    func scale() -> CGFloat {
+        // multiply TOTAL_CLICKS * 2 so it doesn't scale AS much
+        return (CGFloat(self.clicks) / CGFloat(TOTAL_CLICKS * 2)) + 1
+    }
+    
     var body: some View {
         ZStack(alignment: .center) {
             LinearGradient(Color.brandPurple, Color.brandBlue).overlay(Color.black.opacity(0.5))
@@ -75,8 +76,10 @@ struct ContentView: View {
                 Button(action: handleClick) {
                     Hexagon()
                         .frame(width: 40, height: 40)
-                        .opacity(0.80)
+                        .opacity(0.70)
                         .overlay(Hexagon().stroke(Color.brandPink, lineWidth: 2))
+                        .scaleEffect(self.scale())
+                        .animation(.easeIn(duration: ANIMATION_DURATION))
                         .overlay(
                             Text(String(self.clicks))
                                 .foregroundColor(Color.darkEnd)
@@ -93,8 +96,8 @@ struct ContentView: View {
                         .offset(y: 74)
                         .transition(.opacity)
                 } else {
-                    Text("Tap 4 times")
-                    .foregroundColor(Color.white).font(.caption)
+                    Text("Begin tapping")
+                        .foregroundColor(Color.white).font(.footnote)
                     .offset(y: 74)
                 }
             }
