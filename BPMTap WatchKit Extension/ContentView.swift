@@ -8,8 +8,10 @@
 
 import SwiftUI
 
-
-let TOTAL_CLICKS = 4;
+let HEX_SIZE: CGFloat = 40
+let BUTTON_PADDING: CGFloat = 30
+let BUTTON_STROKE_WIDTH: CGFloat = 3
+let TOTAL_CLICKS = 4
 let ANIMATION_DURATION = 0.2
 
 struct Ring<S: Shape>: View {
@@ -19,7 +21,7 @@ struct Ring<S: Shape>: View {
     var body: some View {
         ZStack {
             shape
-                .stroke(Color.brandTeal, lineWidth: 3)
+                .stroke(Color.brandTeal, lineWidth: BUTTON_STROKE_WIDTH)
                 .overlay(shape.fill().opacity(0.2))
         }
     }
@@ -28,7 +30,7 @@ struct Ring<S: Shape>: View {
 struct PaddedButtonStyle: ButtonStyle {
     func makeBody(configuration: Self.Configuration) -> some View {
         configuration.label
-            .padding(30)
+            .padding(BUTTON_PADDING)
             .contentShape(
                 Circle()
         )
@@ -69,41 +71,52 @@ struct ContentView: View {
         return (CGFloat(self.clicks) / CGFloat(TOTAL_CLICKS * 2)) + 1
     }
     
+    func calcLabelHeight(height: CGFloat) -> CGFloat {
+        return (height - (HEX_SIZE + (BUTTON_PADDING * 2) + (BUTTON_STROKE_WIDTH * 2)) / 2)
+    }
+    
     var body: some View {
-        ZStack(alignment: .center) {
-            LinearGradient(Color.brandPurple, Color.brandBlue).overlay(Color.black.opacity(0.5))
-            ZStack {
-                Button(action: handleClick) {
-                    Hexagon()
-                        .frame(width: 40, height: 40)
-                        .opacity(0.85)
-                        .overlay(Hexagon().stroke(Color.brandPink, lineWidth: 2))
-                        .scaleEffect(self.scale())
-                        .animation(.easeIn(duration: ANIMATION_DURATION))
-                        .overlay(
-                            Text(String(self.clicks))
-                                .foregroundColor(Color.darkEnd)
-                        )
+        GeometryReader { geometry in
+            ZStack(alignment: .center) {
+                
+                LinearGradient(Color.brandPurple, Color.brandBlue).overlay(Color.black.opacity(0.5))
+                
+                VStack {
+                    Spacer().frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: self.calcLabelHeight(height: geometry.size.height))
                     
+                    Button(action: self.handleClick) {
+                        Hexagon()
+                            .frame(width: HEX_SIZE, height: HEX_SIZE)
+                            .opacity(0.85)
+                            .overlay(Hexagon().stroke(Color.brandPink, lineWidth: 2))
+                            .scaleEffect(self.scale())
+                            .animation(.easeIn(duration: ANIMATION_DURATION))
+                            .overlay(
+                                Text(String(self.clicks))
+                                    .foregroundColor(Color.darkEnd)
+                            )
+                        
+                    }
+                    .buttonStyle(PaddedButtonStyle())
+                    
+                    
+                    if self.bpm > 0 {
+                        Text(String(format: "%.2f BPM", self.bpm))
+                            .fontWeight(.semibold)
+                            .foregroundColor(Color.white).font(.caption)
+                            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: self.calcLabelHeight(height: geometry.size.height))
+                            .transition(.opacity)
+                    } else {
+                        Text("Begin tapping")
+                            .foregroundColor(Color.white).font(.footnote)
+                            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: self.calcLabelHeight(height: geometry.size.height))
+                    }
                 }
-                .buttonStyle(PaddedButtonStyle())
+                .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
                 
-                
-                if bpm > 0 {
-                    Text(String(format: "%.2f BPM", bpm))
-                        .fontWeight(.semibold)
-                        .foregroundColor(Color.white).font(.caption)
-                        .offset(y: 74)
-                        .transition(.opacity)
-                } else {
-                    Text("Begin tapping")
-                        .foregroundColor(Color.white).font(.footnote)
-                    .offset(y: 74)
-                }
             }
-            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
-            
         }
+        
         .edgesIgnoringSafeArea(.all)
         .navigationBarTitle("BPM Tap")
     }
