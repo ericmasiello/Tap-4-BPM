@@ -13,12 +13,6 @@ let BUTTON_PADDING: CGFloat = 30
 let BUTTON_STROKE_WIDTH: CGFloat = 4
 let TOTAL_CLICKS = 4
 
-func timeToBPM(start: DispatchTime, end: DispatchTime, beatCount: Int) -> Double {
-    let diff = end.uptimeNanoseconds - start.uptimeNanoseconds
-    let seconds = Double(diff) / 1_000_000_000
-    return ((Double(beatCount) - 1) * 60) / seconds
-}
-
 struct ContentView: View {
     @State private var isToggled = false
     @State private var clicks = 0
@@ -36,7 +30,7 @@ struct ContentView: View {
             if (self.clicks == TOTAL_CLICKS) {
                 self.clicks = 0
                 self.end = DispatchTime.now()
-                self.bpm = timeToBPM(start: self.start, end: self.end, beatCount: TOTAL_CLICKS);
+                self.bpm = BPM.calc(start: self.start, end: self.end, beatCount: TOTAL_CLICKS);
             }
         })
     }
@@ -73,24 +67,21 @@ struct ContentView: View {
                                     .foregroundColor(Color.darkEnd)
                             )
                         
-                    }
-                    .buttonStyle(PaddedButtonStyle(padding: BUTTON_PADDING))
+                        }
+                        .paddedCircleStyle(padding: BUTTON_PADDING)
                     
                     if (self.clicks == 0 && self.bpm == 0) {
                         Text("Begin Tapping")
-                            .modifier(
-                                LabelViewModifier(maxHeight: self.calcLabelHeight(geometry.size.height)))
+                            .footerLabel(maxHeight: self.calcLabelHeight(geometry.size.height))
                         
                     } else if self.clicks > 0 && self.clicks < 4 {
                         Text("- - -")
-                            .modifier(
-                                LabelViewModifier(maxHeight: self.calcLabelHeight(geometry.size.height)))
+                            .footerLabel(maxHeight: self.calcLabelHeight(geometry.size.height))
                     } else {
                         Text(String(format: "%.2f BPM", self.bpm))
                             .fontWeight(.semibold)
                             .font(.caption)
-                            .modifier(
-                                LabelViewModifier(maxHeight: self.calcLabelHeight(geometry.size.height)))
+                            .footerLabel(maxHeight: self.calcLabelHeight(geometry.size.height))
                     }
                 }
                 .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)

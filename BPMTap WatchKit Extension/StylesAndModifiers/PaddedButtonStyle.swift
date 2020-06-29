@@ -8,6 +8,12 @@
 
 import SwiftUI
 
+extension Button {
+    func paddedCircleStyle(padding: CGFloat) -> some View {
+        self.buttonStyle(PaddedButtonStyle(padding: padding))
+    }
+}
+
 struct PaddedButtonStyle: ButtonStyle {
     var padding: CGFloat
     
@@ -27,6 +33,6 @@ struct PaddedButtonStyle_Previews: PreviewProvider {
     static var previews: some View {
         Button(action: {}) {
             Text("Yo")
-        }.buttonStyle(PaddedButtonStyle(padding: 30))
+        }.paddedCircleStyle(padding: 30)
     }
 }
