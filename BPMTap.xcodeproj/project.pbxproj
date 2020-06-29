@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		9012D8A424A0139700F5D319 /* Hexagon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9012D8A324A0139700F5D319 /* Hexagon.swift */; };
 		9012D8A624A0DF4300F5D319 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9012D8A524A0DF4300F5D319 /* Colors.swift */; };
+		9081D83424AA38C200AA5201 /* LabelViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9081D83324AA38C200AA5201 /* LabelViewModifier.swift */; };
+		9081D83624AA395700AA5201 /* Ring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9081D83524AA395600AA5201 /* Ring.swift */; };
+		9081D83824AA3A7B00AA5201 /* PaddedButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9081D83724AA3A7B00AA5201 /* PaddedButtonStyle.swift */; };
 		909E03C124663FC60090A580 /* BPMTap WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 909E03C024663FC60090A580 /* BPMTap WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		909E03C724663FC60090A580 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 909E03C524663FC60090A580 /* Interface.storyboard */; };
 		909E03C924663FC80090A580 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 909E03C824663FC80090A580 /* Assets.xcassets */; };
@@ -68,6 +71,9 @@
 /* Begin PBXFileReference section */
 		9012D8A324A0139700F5D319 /* Hexagon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hexagon.swift; sourceTree = "<group>"; };
 		9012D8A524A0DF4300F5D319 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		9081D83324AA38C200AA5201 /* LabelViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelViewModifier.swift; sourceTree = "<group>"; };
+		9081D83524AA395600AA5201 /* Ring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ring.swift; sourceTree = "<group>"; };
+		9081D83724AA3A7B00AA5201 /* PaddedButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddedButtonStyle.swift; sourceTree = "<group>"; };
 		909E03BC24663FC60090A580 /* BPMTap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BPMTap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		909E03C024663FC60090A580 /* BPMTap WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BPMTap WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		909E03C624663FC60090A580 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -97,6 +103,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9081D83924AA3B9500AA5201 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9012D8A324A0139700F5D319 /* Hexagon.swift */,
+				9081D83524AA395600AA5201 /* Ring.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9081D83A24AA3B9E00AA5201 /* StylesAndModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				9081D83324AA38C200AA5201 /* LabelViewModifier.swift */,
+				9081D83724AA3A7B00AA5201 /* PaddedButtonStyle.swift */,
+			);
+			path = StylesAndModifiers;
+			sourceTree = "<group>";
+		};
 		909E03B524663FC60090A580 = {
 			isa = PBXGroup;
 			children = (
@@ -129,9 +153,10 @@
 		909E03D324663FC80090A580 /* BPMTap WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				9081D83A24AA3B9E00AA5201 /* StylesAndModifiers */,
+				9081D83924AA3B9500AA5201 /* Views */,
 				909E03D424663FC80090A580 /* ContentView.swift */,
 				9012D8A524A0DF4300F5D319 /* Colors.swift */,
-				9012D8A324A0139700F5D319 /* Hexagon.swift */,
 				909E03D624663FC80090A580 /* HostingController.swift */,
 				909E03D824663FC80090A580 /* ExtensionDelegate.swift */,
 				909E03DA24663FC80090A580 /* NotificationController.swift */,
@@ -286,8 +311,11 @@
 				909E03D524663FC80090A580 /* ContentView.swift in Sources */,
 				909E03DB24663FC80090A580 /* NotificationController.swift in Sources */,
 				909E03D924663FC80090A580 /* ExtensionDelegate.swift in Sources */,
+				9081D83424AA38C200AA5201 /* LabelViewModifier.swift in Sources */,
 				9012D8A424A0139700F5D319 /* Hexagon.swift in Sources */,
+				9081D83624AA395700AA5201 /* Ring.swift in Sources */,
 				909E03DD24663FC80090A580 /* NotificationView.swift in Sources */,
+				9081D83824AA3A7B00AA5201 /* PaddedButtonStyle.swift in Sources */,
 				909E03DF24663FC80090A580 /* ComplicationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

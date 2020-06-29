@@ -13,32 +13,6 @@ let BUTTON_PADDING: CGFloat = 30
 let BUTTON_STROKE_WIDTH: CGFloat = 4
 let TOTAL_CLICKS = 4
 
-struct Ring<S: Shape>: View {
-    var isHighlighted: Bool
-    var shape: S
-    
-    var body: some View {
-        ZStack {
-            shape
-                .stroke(Color.brandTeal, lineWidth: BUTTON_STROKE_WIDTH)
-                .overlay(shape.fill().opacity(0.2))
-        }
-    }
-}
-
-struct PaddedButtonStyle: ButtonStyle {
-    func makeBody(configuration: Self.Configuration) -> some View {
-        configuration.label
-            .padding(BUTTON_PADDING)
-            .contentShape(
-                Circle()
-        )
-            .background(
-                Ring(isHighlighted: configuration.isPressed, shape: Circle())
-            )
-    }
-}
-
 func timeToBPM(start: DispatchTime, end: DispatchTime, beatCount: Int) -> Double {
     let diff = end.uptimeNanoseconds - start.uptimeNanoseconds
     let seconds = Double(diff) / 1_000_000_000
@@ -72,7 +46,7 @@ struct ContentView: View {
         return (CGFloat(self.clicks) / CGFloat(TOTAL_CLICKS * 2)) + 1
     }
     
-    func calcLabelHeight(height: CGFloat) -> CGFloat {
+    func calcLabelHeight(_ height: CGFloat) -> CGFloat {
         return (height - (HEX_SIZE + (BUTTON_PADDING * 2) + (BUTTON_STROKE_WIDTH * 2)) / 2)
     }
     
@@ -85,7 +59,7 @@ struct ContentView: View {
                     .overlay(Color.black.opacity(0.4))
                 
                 VStack {
-                    Spacer().frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: self.calcLabelHeight(height: geometry.size.height))
+                    Spacer().frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: self.calcLabelHeight(geometry.size.height))
                     
                     Button(action: self.handleClick) {
                         Hexagon()
@@ -100,24 +74,23 @@ struct ContentView: View {
                             )
                         
                     }
-                    .buttonStyle(PaddedButtonStyle())
+                    .buttonStyle(PaddedButtonStyle(padding: BUTTON_PADDING))
                     
                     if (self.clicks == 0 && self.bpm == 0) {
                         Text("Begin Tapping")
-                            .foregroundColor(Color.white).font(.footnote)
-                            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: self.calcLabelHeight(height: geometry.size.height))
-                            .transition(.opacity)
+                            .modifier(
+                                LabelViewModifier(maxHeight: self.calcLabelHeight(geometry.size.height)))
+                        
                     } else if self.clicks > 0 && self.clicks < 4 {
                         Text("- - -")
-                            .foregroundColor(Color.white).font(.footnote)
-                            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: self.calcLabelHeight(height: geometry.size.height))
-                            .transition(.opacity)
+                            .modifier(
+                                LabelViewModifier(maxHeight: self.calcLabelHeight(geometry.size.height)))
                     } else {
                         Text(String(format: "%.2f BPM", self.bpm))
-                        .fontWeight(.semibold)
-                        .foregroundColor(Color.white).font(.caption)
-                        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: self.calcLabelHeight(height: geometry.size.height))
-                        .transition(.opacity)
+                            .fontWeight(.semibold)
+                            .font(.caption)
+                            .modifier(
+                                LabelViewModifier(maxHeight: self.calcLabelHeight(geometry.size.height)))
                     }
                 }
                 .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
