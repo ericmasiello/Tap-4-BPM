@@ -20,7 +20,29 @@ struct LabelViewModifier: ViewModifier {
 }
 
 struct Label_Previews: PreviewProvider {
+    
+    struct Demo: View {
+        @State private var isToggled: Bool = false
+        var body: some View {
+            VStack {
+                Toggle(isOn: $isToggled.animation(.linear)) {
+                    Text("Hide/Show")
+                }
+                if (isToggled) {
+                    Text("On")
+                        .modifier(LabelViewModifier(maxHeight: 200))
+                } else {
+                    Text("Off")
+                        .modifier(LabelViewModifier(maxHeight: 200))
+                }
+                
+            }
+        }
+    }
+    
+    
+    
     static var previews: some View {
-        Text("Hello world").modifier(LabelViewModifier(maxHeight: 200))
+        Demo()
     }
 }
