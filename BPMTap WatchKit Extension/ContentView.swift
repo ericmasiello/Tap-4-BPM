@@ -101,17 +101,20 @@ struct ContentView: View {
                     }
                     .buttonStyle(PaddedButtonStyle())
                     
-                    
-                    if self.bpm > 0 {
-                        Text(String(format: "%.2f BPM", self.bpm))
-                            .fontWeight(.semibold)
-                            .foregroundColor(Color.white).font(.caption)
-                            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: self.calcLabelHeight(height: geometry.size.height))
-                            .transition(.opacity)
+                    if (self.clicks == 0 && self.bpm == 0) {
+                        Text("Begin Tapping")
+                        .foregroundColor(Color.white).font(.footnote)
+                        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: self.calcLabelHeight(height: geometry.size.height))
+                    } else if self.clicks > 0 && self.clicks < 4 {
+                        Text("- - -")
+                        .foregroundColor(Color.white).font(.footnote)
+                        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: self.calcLabelHeight(height: geometry.size.height))
                     } else {
-                        Text("Begin tapping")
-                            .foregroundColor(Color.white).font(.footnote)
-                            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: self.calcLabelHeight(height: geometry.size.height))
+                        Text(String(format: "%.2f BPM", self.bpm))
+                        .fontWeight(.semibold)
+                        .foregroundColor(Color.white).font(.caption)
+                        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: self.calcLabelHeight(height: geometry.size.height))
+                        .transition(.opacity)
                     }
                 }
                 .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
