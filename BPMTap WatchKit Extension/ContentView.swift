@@ -10,7 +10,7 @@ import SwiftUI
 
 let HEX_SIZE: CGFloat = 40
 let BUTTON_PADDING: CGFloat = 30
-let BUTTON_STROKE_WIDTH: CGFloat = 3
+let BUTTON_STROKE_WIDTH: CGFloat = 4
 let TOTAL_CLICKS = 4
 let ANIMATION_DURATION = 0.2
 
@@ -79,7 +79,9 @@ struct ContentView: View {
         GeometryReader { geometry in
             ZStack(alignment: .center) {
                 
-                LinearGradient(Color.brandPurple, Color.brandBlue).overlay(Color.black.opacity(0.5))
+                LinearGradient(Color.brandPurple, Color.brandPurple)
+                    .overlay(LinearGradient(Color.brandPurple, Color.brandBlue.opacity(0.5)))
+                    .overlay(Color.black.opacity(0.4))
                 
                 VStack {
                     Spacer().frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: self.calcLabelHeight(height: geometry.size.height))
@@ -88,7 +90,7 @@ struct ContentView: View {
                         Hexagon()
                             .frame(width: HEX_SIZE, height: HEX_SIZE)
                             .opacity(0.85)
-                            .overlay(Hexagon().stroke(Color.brandPink, lineWidth: 2))
+                            .overlay(Hexagon().stroke(Color.brandPurple, lineWidth: 3))
                             .scaleEffect(self.scale())
                             .animation(.easeIn(duration: ANIMATION_DURATION))
                             .overlay(
