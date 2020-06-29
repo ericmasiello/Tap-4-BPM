@@ -12,7 +12,6 @@ let HEX_SIZE: CGFloat = 40
 let BUTTON_PADDING: CGFloat = 30
 let BUTTON_STROKE_WIDTH: CGFloat = 4
 let TOTAL_CLICKS = 4
-let ANIMATION_DURATION = 0.2
 
 struct Ring<S: Shape>: View {
     var isHighlighted: Bool
@@ -54,16 +53,18 @@ struct ContentView: View {
     @State private var bpm: Double = 0
     
     func handleClick() {
-        if (self.clicks == 0) {
-            self.start = DispatchTime.now()
-        }
-        self.clicks += 1
-        
-        if (self.clicks == TOTAL_CLICKS) {
-            self.clicks = 0
-            self.end = DispatchTime.now()
-            self.bpm = timeToBPM(start: self.start, end: self.end, beatCount: TOTAL_CLICKS);
-        }
+        withAnimation(.linear(duration: 0.35), {
+            if (self.clicks == 0) {
+                self.start = DispatchTime.now()
+            }
+            self.clicks += 1
+            
+            if (self.clicks == TOTAL_CLICKS) {
+                self.clicks = 0
+                self.end = DispatchTime.now()
+                self.bpm = timeToBPM(start: self.start, end: self.end, beatCount: TOTAL_CLICKS);
+            }
+        })
     }
     
     func scale() -> CGFloat {
@@ -92,7 +93,7 @@ struct ContentView: View {
                             .opacity(0.85)
                             .overlay(Hexagon().stroke(Color.brandPurple, lineWidth: 3))
                             .scaleEffect(self.scale())
-                            .animation(.easeIn(duration: ANIMATION_DURATION))
+                            .animation(.spring(response: 0.3, dampingFraction: 0.4, blendDuration: 0))
                             .overlay(
                                 Text(String(self.clicks))
                                     .foregroundColor(Color.darkEnd)
@@ -103,12 +104,14 @@ struct ContentView: View {
                     
                     if (self.clicks == 0 && self.bpm == 0) {
                         Text("Begin Tapping")
-                        .foregroundColor(Color.white).font(.footnote)
-                        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: self.calcLabelHeight(height: geometry.size.height))
+                            .foregroundColor(Color.white).font(.footnote)
+                            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: self.calcLabelHeight(height: geometry.size.height))
+                            .transition(.opacity)
                     } else if self.clicks > 0 && self.clicks < 4 {
                         Text("- - -")
-                        .foregroundColor(Color.white).font(.footnote)
-                        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: self.calcLabelHeight(height: geometry.size.height))
+                            .foregroundColor(Color.white).font(.footnote)
+                            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: self.calcLabelHeight(height: geometry.size.height))
+                            .transition(.opacity)
                     } else {
                         Text(String(format: "%.2f BPM", self.bpm))
                         .fontWeight(.semibold)
