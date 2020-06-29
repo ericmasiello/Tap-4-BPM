@@ -99,7 +99,7 @@ struct ContentView: View {
         }
         
         .edgesIgnoringSafeArea(.all)
-        .navigationBarTitle("BPM Tap")
+        .navigationBarTitle("Tap 4 BPM")
     }
 }
 
