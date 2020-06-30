@@ -5,8 +5,13 @@
 //  Created by Eric Masiello on 6/29/20.
 //  Copyright © 2020 Eric Masiello. All rights reserved.
 //
-
 import SwiftUI
+
+extension View {
+    func footerLabel(maxHeight: CGFloat) -> some View {
+        self.modifier(LabelViewModifier(maxHeight: maxHeight))
+    }
+}
 
 struct LabelViewModifier: ViewModifier {
     var maxHeight: CGFloat;
@@ -30,10 +35,11 @@ struct Label_Previews: PreviewProvider {
                 }
                 if (isToggled) {
                     Text("On")
-                        .modifier(LabelViewModifier(maxHeight: 200))
+                        .footerLabel(maxHeight: 200)
+                        
                 } else {
                     Text("Off")
-                        .modifier(LabelViewModifier(maxHeight: 200))
+                        .footerLabel(maxHeight: 200)
                 }
                 
             }

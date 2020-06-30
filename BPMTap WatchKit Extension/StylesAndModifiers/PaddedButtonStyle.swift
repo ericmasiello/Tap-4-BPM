@@ -5,8 +5,13 @@
 //  Created by Eric Masiello on 6/29/20.
 //  Copyright © 2020 Eric Masiello. All rights reserved.
 //
-
 import SwiftUI
+
+extension Button {
+    func paddedCircleStyle(padding: CGFloat) -> some View {
+        self.buttonStyle(PaddedButtonStyle(padding: padding))
+    }
+}
 
 struct PaddedButtonStyle: ButtonStyle {
     var padding: CGFloat
@@ -27,6 +32,6 @@ struct PaddedButtonStyle_Previews: PreviewProvider {
     static var previews: some View {
         Button(action: {}) {
             Text("Yo")
-        }.buttonStyle(PaddedButtonStyle(padding: 30))
+        }.paddedCircleStyle(padding: 30)
     }
 }
