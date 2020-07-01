@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9012D8A424A0139700F5D319 /* Hexagon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9012D8A324A0139700F5D319 /* Hexagon.swift */; };
 		9012D8A624A0DF4300F5D319 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9012D8A524A0DF4300F5D319 /* Colors.swift */; };
+		90785EF824ABA86700F634E6 /* BPM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90785EF724ABA86700F634E6 /* BPM.swift */; };
 		9081D83424AA38C200AA5201 /* LabelViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9081D83324AA38C200AA5201 /* LabelViewModifier.swift */; };
 		9081D83624AA395700AA5201 /* Ring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9081D83524AA395600AA5201 /* Ring.swift */; };
 		9081D83824AA3A7B00AA5201 /* PaddedButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9081D83724AA3A7B00AA5201 /* PaddedButtonStyle.swift */; };
@@ -71,10 +72,11 @@
 /* Begin PBXFileReference section */
 		9012D8A324A0139700F5D319 /* Hexagon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hexagon.swift; sourceTree = "<group>"; };
 		9012D8A524A0DF4300F5D319 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		90785EF724ABA86700F634E6 /* BPM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BPM.swift; sourceTree = "<group>"; };
 		9081D83324AA38C200AA5201 /* LabelViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelViewModifier.swift; sourceTree = "<group>"; };
 		9081D83524AA395600AA5201 /* Ring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ring.swift; sourceTree = "<group>"; };
 		9081D83724AA3A7B00AA5201 /* PaddedButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddedButtonStyle.swift; sourceTree = "<group>"; };
-		909E03BC24663FC60090A580 /* BPMTap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BPMTap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		909E03BC24663FC60090A580 /* Tap 4 BPM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tap 4 BPM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		909E03C024663FC60090A580 /* BPMTap WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BPMTap WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		909E03C624663FC60090A580 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		909E03C824663FC80090A580 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -133,7 +135,7 @@
 		909E03BD24663FC60090A580 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				909E03BC24663FC60090A580 /* BPMTap.app */,
+				909E03BC24663FC60090A580 /* Tap 4 BPM.app */,
 				909E03C024663FC60090A580 /* BPMTap WatchKit App.app */,
 				909E03CF24663FC80090A580 /* BPMTap WatchKit Extension.appex */,
 			);
@@ -156,6 +158,7 @@
 				9081D83A24AA3B9E00AA5201 /* StylesAndModifiers */,
 				9081D83924AA3B9500AA5201 /* Views */,
 				909E03D424663FC80090A580 /* ContentView.swift */,
+				90785EF724ABA86700F634E6 /* BPM.swift */,
 				9012D8A524A0DF4300F5D319 /* Colors.swift */,
 				909E03D624663FC80090A580 /* HostingController.swift */,
 				909E03D824663FC80090A580 /* ExtensionDelegate.swift */,
@@ -195,7 +198,7 @@
 			);
 			name = BPMTap;
 			productName = BPMTap;
-			productReference = 909E03BC24663FC60090A580 /* BPMTap.app */;
+			productReference = 909E03BC24663FC60090A580 /* Tap 4 BPM.app */;
 			productType = "com.apple.product-type.application.watchapp2-container";
 		};
 		909E03BF24663FC60090A580 /* BPMTap WatchKit App */ = {
@@ -313,6 +316,7 @@
 				909E03D924663FC80090A580 /* ExtensionDelegate.swift in Sources */,
 				9081D83424AA38C200AA5201 /* LabelViewModifier.swift in Sources */,
 				9012D8A424A0139700F5D319 /* Hexagon.swift in Sources */,
+				90785EF824ABA86700F634E6 /* BPM.swift in Sources */,
 				9081D83624AA395700AA5201 /* Ring.swift in Sources */,
 				909E03DD24663FC80090A580 /* NotificationView.swift in Sources */,
 				9081D83824AA3A7B00AA5201 /* PaddedButtonStyle.swift in Sources */,
@@ -473,7 +477,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.01;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.synbydesign.BPMTap.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -498,7 +502,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.01;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.synbydesign.BPMTap.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -518,7 +522,7 @@
 				DEVELOPMENT_TEAM = R6SSQ5A38J;
 				IBSC_MODULE = BPMTap_WatchKit_Extension;
 				INFOPLIST_FILE = "BPMTap WatchKit App/Info.plist";
-				MARKETING_VERSION = 1.01;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.synbydesign.BPMTap.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -538,7 +542,7 @@
 				DEVELOPMENT_TEAM = R6SSQ5A38J;
 				IBSC_MODULE = BPMTap_WatchKit_Extension;
 				INFOPLIST_FILE = "BPMTap WatchKit App/Info.plist";
-				MARKETING_VERSION = 1.01;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.synbydesign.BPMTap.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -555,9 +559,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R6SSQ5A38J;
-				MARKETING_VERSION = 1.01;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.synbydesign.BPMTap;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Tap 4 BPM";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -568,9 +572,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R6SSQ5A38J;
-				MARKETING_VERSION = 1.01;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.synbydesign.BPMTap;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Tap 4 BPM";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
