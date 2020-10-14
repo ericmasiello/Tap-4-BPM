@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,13 +18,13 @@
 		909E03C924663FC80090A580 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 909E03C824663FC80090A580 /* Assets.xcassets */; };
 		909E03D024663FC80090A580 /* BPMTap WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 909E03CF24663FC80090A580 /* BPMTap WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		909E03D524663FC80090A580 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909E03D424663FC80090A580 /* ContentView.swift */; };
-		909E03D724663FC80090A580 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909E03D624663FC80090A580 /* HostingController.swift */; };
 		909E03D924663FC80090A580 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909E03D824663FC80090A580 /* ExtensionDelegate.swift */; };
 		909E03DB24663FC80090A580 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909E03DA24663FC80090A580 /* NotificationController.swift */; };
 		909E03DD24663FC80090A580 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909E03DC24663FC80090A580 /* NotificationView.swift */; };
 		909E03DF24663FC80090A580 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909E03DE24663FC80090A580 /* ComplicationController.swift */; };
 		909E03E124663FC80090A580 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 909E03E024663FC80090A580 /* Assets.xcassets */; };
 		909E03E424663FC80090A580 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 909E03E324663FC80090A580 /* Preview Assets.xcassets */; };
+		90C84E582537346B007E281A /* BPMTapNewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C84E572537346B007E281A /* BPMTapNewApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,7 +83,6 @@
 		909E03CA24663FC80090A580 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		909E03CF24663FC80090A580 /* BPMTap WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BPMTap WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		909E03D424663FC80090A580 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		909E03D624663FC80090A580 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
 		909E03D824663FC80090A580 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		909E03DA24663FC80090A580 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		909E03DC24663FC80090A580 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
@@ -92,6 +91,7 @@
 		909E03E324663FC80090A580 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		909E03E524663FC80090A580 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		909E03E624663FC80090A580 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		90C84E572537346B007E281A /* BPMTapNewApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BPMTapNewApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,9 +158,9 @@
 				9081D83A24AA3B9E00AA5201 /* StylesAndModifiers */,
 				9081D83924AA3B9500AA5201 /* Views */,
 				909E03D424663FC80090A580 /* ContentView.swift */,
+				90C84E572537346B007E281A /* BPMTapNewApp.swift */,
 				90785EF724ABA86700F634E6 /* BPM.swift */,
 				9012D8A524A0DF4300F5D319 /* Colors.swift */,
-				909E03D624663FC80090A580 /* HostingController.swift */,
 				909E03D824663FC80090A580 /* ExtensionDelegate.swift */,
 				909E03DA24663FC80090A580 /* NotificationController.swift */,
 				909E03DC24663FC80090A580 /* NotificationView.swift */,
@@ -257,7 +257,7 @@
 				};
 			};
 			buildConfigurationList = 909E03B924663FC60090A580 /* Build configuration list for PBXProject "BPMTap" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -309,8 +309,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				909E03D724663FC80090A580 /* HostingController.swift in Sources */,
 				9012D8A624A0DF4300F5D319 /* Colors.swift in Sources */,
+				90C84E582537346B007E281A /* BPMTapNewApp.swift in Sources */,
 				909E03D524663FC80090A580 /* ContentView.swift in Sources */,
 				909E03DB24663FC80090A580 /* NotificationController.swift in Sources */,
 				909E03D924663FC80090A580 /* ExtensionDelegate.swift in Sources */,
@@ -477,14 +477,14 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.synbydesign.BPMTap.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
 			};
 			name = Debug;
 		};
@@ -502,14 +502,14 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.synbydesign.BPMTap.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
 			};
 			name = Release;
 		};
@@ -522,14 +522,14 @@
 				DEVELOPMENT_TEAM = R6SSQ5A38J;
 				IBSC_MODULE = BPMTap_WatchKit_Extension;
 				INFOPLIST_FILE = "BPMTap WatchKit App/Info.plist";
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.synbydesign.BPMTap.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
 			};
 			name = Debug;
 		};
@@ -542,14 +542,14 @@
 				DEVELOPMENT_TEAM = R6SSQ5A38J;
 				IBSC_MODULE = BPMTap_WatchKit_Extension;
 				INFOPLIST_FILE = "BPMTap WatchKit App/Info.plist";
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.synbydesign.BPMTap.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
 			};
 			name = Release;
 		};
@@ -559,7 +559,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R6SSQ5A38J;
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.synbydesign.BPMTap;
 				PRODUCT_NAME = "Tap 4 BPM";
 				SWIFT_VERSION = 5.0;
@@ -572,7 +572,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R6SSQ5A38J;
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.synbydesign.BPMTap;
 				PRODUCT_NAME = "Tap 4 BPM";
 				SWIFT_VERSION = 5.0;
