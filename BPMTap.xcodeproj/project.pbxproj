@@ -3,66 +3,58 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9012D8A424A0139700F5D319 /* Hexagon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9012D8A324A0139700F5D319 /* Hexagon.swift */; };
-		9012D8A624A0DF4300F5D319 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9012D8A524A0DF4300F5D319 /* Colors.swift */; };
-		90785EF824ABA86700F634E6 /* BPM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90785EF724ABA86700F634E6 /* BPM.swift */; };
-		9081D83424AA38C200AA5201 /* LabelViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9081D83324AA38C200AA5201 /* LabelViewModifier.swift */; };
-		9081D83624AA395700AA5201 /* Ring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9081D83524AA395600AA5201 /* Ring.swift */; };
-		9081D83824AA3A7B00AA5201 /* PaddedButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9081D83724AA3A7B00AA5201 /* PaddedButtonStyle.swift */; };
-		909E03C124663FC60090A580 /* BPMTap WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 909E03C024663FC60090A580 /* BPMTap WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		909E03C724663FC60090A580 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 909E03C524663FC60090A580 /* Interface.storyboard */; };
-		909E03C924663FC80090A580 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 909E03C824663FC80090A580 /* Assets.xcassets */; };
-		909E03D024663FC80090A580 /* BPMTap WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 909E03CF24663FC80090A580 /* BPMTap WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		909E03D524663FC80090A580 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909E03D424663FC80090A580 /* ContentView.swift */; };
-		909E03D724663FC80090A580 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909E03D624663FC80090A580 /* HostingController.swift */; };
-		909E03D924663FC80090A580 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909E03D824663FC80090A580 /* ExtensionDelegate.swift */; };
-		909E03DB24663FC80090A580 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909E03DA24663FC80090A580 /* NotificationController.swift */; };
-		909E03DD24663FC80090A580 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909E03DC24663FC80090A580 /* NotificationView.swift */; };
-		909E03DF24663FC80090A580 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909E03DE24663FC80090A580 /* ComplicationController.swift */; };
-		909E03E124663FC80090A580 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 909E03E024663FC80090A580 /* Assets.xcassets */; };
-		909E03E424663FC80090A580 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 909E03E324663FC80090A580 /* Preview Assets.xcassets */; };
+		4DD8A71D28DF49F7006FB5C1 /* BPMTap Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 4DD8A71C28DF49F7006FB5C1 /* BPMTap Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4DD8A72228DF49F7006FB5C1 /* BPMTapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD8A72128DF49F7006FB5C1 /* BPMTapApp.swift */; };
+		4DD8A72428DF49F7006FB5C1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD8A72328DF49F7006FB5C1 /* ContentView.swift */; };
+		4DD8A72628DF49F8006FB5C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DD8A72528DF49F8006FB5C1 /* Assets.xcassets */; };
+		4DD8A72928DF49F8006FB5C1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DD8A72828DF49F8006FB5C1 /* Preview Assets.xcassets */; };
+		4DD8A73328DF49F8006FB5C1 /* BPMTap_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD8A73228DF49F8006FB5C1 /* BPMTap_Watch_AppTests.swift */; };
+		4DD8A73D28DF49F8006FB5C1 /* BPMTap_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD8A73C28DF49F8006FB5C1 /* BPMTap_Watch_AppUITests.swift */; };
+		4DD8A73F28DF49F8006FB5C1 /* BPMTap_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD8A73E28DF49F8006FB5C1 /* BPMTap_Watch_AppUITestsLaunchTests.swift */; };
+		4DF2BF3128DF52F800DC8902 /* BPM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF2BF3028DF52F800DC8902 /* BPM.swift */; };
+		4DF2BF3328DF530100DC8902 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF2BF3228DF530100DC8902 /* Colors.swift */; };
+		4DF2BF3928DF536200DC8902 /* Hexagon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF2BF3828DF536200DC8902 /* Hexagon.swift */; };
+		4DF2BF3B28DF536600DC8902 /* Ring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF2BF3A28DF536600DC8902 /* Ring.swift */; };
+		4DF2BF3E28DF537B00DC8902 /* LabelViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF2BF3C28DF537B00DC8902 /* LabelViewModifier.swift */; };
+		4DF2BF3F28DF537B00DC8902 /* PaddedButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF2BF3D28DF537B00DC8902 /* PaddedButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		909E03C224663FC60090A580 /* PBXContainerItemProxy */ = {
+		4DD8A71E28DF49F7006FB5C1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 909E03B624663FC60090A580 /* Project object */;
+			containerPortal = 4DD8A71028DF49F7006FB5C1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 909E03BF24663FC60090A580;
-			remoteInfo = "BPMTap WatchKit App";
+			remoteGlobalIDString = 4DD8A71B28DF49F7006FB5C1;
+			remoteInfo = "BPMTap Watch App";
 		};
-		909E03D124663FC80090A580 /* PBXContainerItemProxy */ = {
+		4DD8A72F28DF49F8006FB5C1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 909E03B624663FC60090A580 /* Project object */;
+			containerPortal = 4DD8A71028DF49F7006FB5C1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 909E03CE24663FC80090A580;
-			remoteInfo = "BPMTap WatchKit Extension";
+			remoteGlobalIDString = 4DD8A71B28DF49F7006FB5C1;
+			remoteInfo = "BPMTap Watch App";
+		};
+		4DD8A73928DF49F8006FB5C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DD8A71028DF49F7006FB5C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DD8A71B28DF49F7006FB5C1;
+			remoteInfo = "BPMTap Watch App";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		909E03EC24663FC80090A580 /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				909E03D024663FC80090A580 /* BPMTap WatchKit Extension.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		909E03F024663FC80090A580 /* Embed Watch Content */ = {
+		4DD8A74528DF49F8006FB5C1 /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				909E03C124663FC60090A580 /* BPMTap WatchKit App.app in Embed Watch Content */,
+				4DD8A71D28DF49F7006FB5C1 /* BPMTap Watch App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -70,32 +62,41 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9012D8A324A0139700F5D319 /* Hexagon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hexagon.swift; sourceTree = "<group>"; };
-		9012D8A524A0DF4300F5D319 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		90785EF724ABA86700F634E6 /* BPM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BPM.swift; sourceTree = "<group>"; };
-		9081D83324AA38C200AA5201 /* LabelViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelViewModifier.swift; sourceTree = "<group>"; };
-		9081D83524AA395600AA5201 /* Ring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ring.swift; sourceTree = "<group>"; };
-		9081D83724AA3A7B00AA5201 /* PaddedButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddedButtonStyle.swift; sourceTree = "<group>"; };
-		909E03BC24663FC60090A580 /* Tap 4 BPM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tap 4 BPM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		909E03C024663FC60090A580 /* BPMTap WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BPMTap WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		909E03C624663FC60090A580 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
-		909E03C824663FC80090A580 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		909E03CA24663FC80090A580 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		909E03CF24663FC80090A580 /* BPMTap WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BPMTap WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		909E03D424663FC80090A580 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		909E03D624663FC80090A580 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
-		909E03D824663FC80090A580 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
-		909E03DA24663FC80090A580 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
-		909E03DC24663FC80090A580 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
-		909E03DE24663FC80090A580 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
-		909E03E024663FC80090A580 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		909E03E324663FC80090A580 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		909E03E524663FC80090A580 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		909E03E624663FC80090A580 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		4DD8A71628DF49F7006FB5C1 /* Tap 4 BPM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tap 4 BPM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DD8A71C28DF49F7006FB5C1 /* BPMTap Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BPMTap Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DD8A72128DF49F7006FB5C1 /* BPMTapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BPMTapApp.swift; sourceTree = "<group>"; };
+		4DD8A72328DF49F7006FB5C1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4DD8A72528DF49F8006FB5C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4DD8A72828DF49F8006FB5C1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4DD8A72E28DF49F8006FB5C1 /* BPMTap Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BPMTap Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DD8A73228DF49F8006FB5C1 /* BPMTap_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BPMTap_Watch_AppTests.swift; sourceTree = "<group>"; };
+		4DD8A73828DF49F8006FB5C1 /* BPMTap Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BPMTap Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DD8A73C28DF49F8006FB5C1 /* BPMTap_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BPMTap_Watch_AppUITests.swift; sourceTree = "<group>"; };
+		4DD8A73E28DF49F8006FB5C1 /* BPMTap_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BPMTap_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4DF2BF3028DF52F800DC8902 /* BPM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BPM.swift; sourceTree = "<group>"; };
+		4DF2BF3228DF530100DC8902 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		4DF2BF3828DF536200DC8902 /* Hexagon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hexagon.swift; sourceTree = "<group>"; };
+		4DF2BF3A28DF536600DC8902 /* Ring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ring.swift; sourceTree = "<group>"; };
+		4DF2BF3C28DF537B00DC8902 /* LabelViewModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelViewModifier.swift; sourceTree = "<group>"; };
+		4DF2BF3D28DF537B00DC8902 /* PaddedButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaddedButtonStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		909E03CC24663FC80090A580 /* Frameworks */ = {
+		4DD8A71928DF49F7006FB5C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DD8A72B28DF49F8006FB5C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DD8A73528DF49F8006FB5C1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -105,260 +106,283 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9081D83924AA3B9500AA5201 /* Views */ = {
+		4DD8A70F28DF49F7006FB5C1 = {
 			isa = PBXGroup;
 			children = (
-				9012D8A324A0139700F5D319 /* Hexagon.swift */,
-				9081D83524AA395600AA5201 /* Ring.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		9081D83A24AA3B9E00AA5201 /* StylesAndModifiers */ = {
-			isa = PBXGroup;
-			children = (
-				9081D83324AA38C200AA5201 /* LabelViewModifier.swift */,
-				9081D83724AA3A7B00AA5201 /* PaddedButtonStyle.swift */,
-			);
-			path = StylesAndModifiers;
-			sourceTree = "<group>";
-		};
-		909E03B524663FC60090A580 = {
-			isa = PBXGroup;
-			children = (
-				909E03C424663FC60090A580 /* BPMTap WatchKit App */,
-				909E03D324663FC80090A580 /* BPMTap WatchKit Extension */,
-				909E03BD24663FC60090A580 /* Products */,
+				4DD8A72028DF49F7006FB5C1 /* BPMTap Watch App */,
+				4DD8A73128DF49F8006FB5C1 /* BPMTap Watch AppTests */,
+				4DD8A73B28DF49F8006FB5C1 /* BPMTap Watch AppUITests */,
+				4DD8A71728DF49F7006FB5C1 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		909E03BD24663FC60090A580 /* Products */ = {
+		4DD8A71728DF49F7006FB5C1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				909E03BC24663FC60090A580 /* Tap 4 BPM.app */,
-				909E03C024663FC60090A580 /* BPMTap WatchKit App.app */,
-				909E03CF24663FC80090A580 /* BPMTap WatchKit Extension.appex */,
+				4DD8A71628DF49F7006FB5C1 /* Tap 4 BPM.app */,
+				4DD8A71C28DF49F7006FB5C1 /* BPMTap Watch App.app */,
+				4DD8A72E28DF49F8006FB5C1 /* BPMTap Watch AppTests.xctest */,
+				4DD8A73828DF49F8006FB5C1 /* BPMTap Watch AppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		909E03C424663FC60090A580 /* BPMTap WatchKit App */ = {
+		4DD8A72028DF49F7006FB5C1 /* BPMTap Watch App */ = {
 			isa = PBXGroup;
 			children = (
-				909E03C524663FC60090A580 /* Interface.storyboard */,
-				909E03C824663FC80090A580 /* Assets.xcassets */,
-				909E03CA24663FC80090A580 /* Info.plist */,
+				4DF2BF3228DF530100DC8902 /* Colors.swift */,
+				4DF2BF3C28DF537B00DC8902 /* LabelViewModifier.swift */,
+				4DF2BF3D28DF537B00DC8902 /* PaddedButtonStyle.swift */,
+				4DF2BF3028DF52F800DC8902 /* BPM.swift */,
+				4DF2BF3A28DF536600DC8902 /* Ring.swift */,
+				4DF2BF3828DF536200DC8902 /* Hexagon.swift */,
+				4DD8A72128DF49F7006FB5C1 /* BPMTapApp.swift */,
+				4DD8A72328DF49F7006FB5C1 /* ContentView.swift */,
+				4DD8A72528DF49F8006FB5C1 /* Assets.xcassets */,
+				4DD8A72728DF49F8006FB5C1 /* Preview Content */,
 			);
-			path = "BPMTap WatchKit App";
+			path = "BPMTap Watch App";
 			sourceTree = "<group>";
 		};
-		909E03D324663FC80090A580 /* BPMTap WatchKit Extension */ = {
+		4DD8A72728DF49F8006FB5C1 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				9081D83A24AA3B9E00AA5201 /* StylesAndModifiers */,
-				9081D83924AA3B9500AA5201 /* Views */,
-				909E03D424663FC80090A580 /* ContentView.swift */,
-				90785EF724ABA86700F634E6 /* BPM.swift */,
-				9012D8A524A0DF4300F5D319 /* Colors.swift */,
-				909E03D624663FC80090A580 /* HostingController.swift */,
-				909E03D824663FC80090A580 /* ExtensionDelegate.swift */,
-				909E03DA24663FC80090A580 /* NotificationController.swift */,
-				909E03DC24663FC80090A580 /* NotificationView.swift */,
-				909E03DE24663FC80090A580 /* ComplicationController.swift */,
-				909E03E024663FC80090A580 /* Assets.xcassets */,
-				909E03E524663FC80090A580 /* Info.plist */,
-				909E03E624663FC80090A580 /* PushNotificationPayload.apns */,
-				909E03E224663FC80090A580 /* Preview Content */,
-			);
-			path = "BPMTap WatchKit Extension";
-			sourceTree = "<group>";
-		};
-		909E03E224663FC80090A580 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				909E03E324663FC80090A580 /* Preview Assets.xcassets */,
+				4DD8A72828DF49F8006FB5C1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4DD8A73128DF49F8006FB5C1 /* BPMTap Watch AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				4DD8A73228DF49F8006FB5C1 /* BPMTap_Watch_AppTests.swift */,
+			);
+			path = "BPMTap Watch AppTests";
+			sourceTree = "<group>";
+		};
+		4DD8A73B28DF49F8006FB5C1 /* BPMTap Watch AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4DD8A73C28DF49F8006FB5C1 /* BPMTap_Watch_AppUITests.swift */,
+				4DD8A73E28DF49F8006FB5C1 /* BPMTap_Watch_AppUITestsLaunchTests.swift */,
+			);
+			path = "BPMTap Watch AppUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		909E03BB24663FC60090A580 /* BPMTap */ = {
+		4DD8A71528DF49F7006FB5C1 /* BPMTap */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 909E03F124663FC80090A580 /* Build configuration list for PBXNativeTarget "BPMTap" */;
+			buildConfigurationList = 4DD8A74628DF49F8006FB5C1 /* Build configuration list for PBXNativeTarget "BPMTap" */;
 			buildPhases = (
-				909E03BA24663FC60090A580 /* Resources */,
-				909E03F024663FC80090A580 /* Embed Watch Content */,
+				4DD8A71428DF49F7006FB5C1 /* Resources */,
+				4DD8A74528DF49F8006FB5C1 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				909E03C324663FC60090A580 /* PBXTargetDependency */,
+				4DD8A71F28DF49F7006FB5C1 /* PBXTargetDependency */,
 			);
 			name = BPMTap;
 			productName = BPMTap;
-			productReference = 909E03BC24663FC60090A580 /* Tap 4 BPM.app */;
+			productReference = 4DD8A71628DF49F7006FB5C1 /* Tap 4 BPM.app */;
 			productType = "com.apple.product-type.application.watchapp2-container";
 		};
-		909E03BF24663FC60090A580 /* BPMTap WatchKit App */ = {
+		4DD8A71B28DF49F7006FB5C1 /* BPMTap Watch App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 909E03ED24663FC80090A580 /* Build configuration list for PBXNativeTarget "BPMTap WatchKit App" */;
+			buildConfigurationList = 4DD8A74228DF49F8006FB5C1 /* Build configuration list for PBXNativeTarget "BPMTap Watch App" */;
 			buildPhases = (
-				909E03BE24663FC60090A580 /* Resources */,
-				909E03EC24663FC80090A580 /* Embed App Extensions */,
+				4DD8A71828DF49F7006FB5C1 /* Sources */,
+				4DD8A71928DF49F7006FB5C1 /* Frameworks */,
+				4DD8A71A28DF49F7006FB5C1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				909E03D224663FC80090A580 /* PBXTargetDependency */,
 			);
-			name = "BPMTap WatchKit App";
-			productName = "BPMTap WatchKit App";
-			productReference = 909E03C024663FC60090A580 /* BPMTap WatchKit App.app */;
-			productType = "com.apple.product-type.application.watchapp2";
+			name = "BPMTap Watch App";
+			productName = "BPMTap Watch App";
+			productReference = 4DD8A71C28DF49F7006FB5C1 /* BPMTap Watch App.app */;
+			productType = "com.apple.product-type.application";
 		};
-		909E03CE24663FC80090A580 /* BPMTap WatchKit Extension */ = {
+		4DD8A72D28DF49F8006FB5C1 /* BPMTap Watch AppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 909E03E924663FC80090A580 /* Build configuration list for PBXNativeTarget "BPMTap WatchKit Extension" */;
+			buildConfigurationList = 4DD8A74928DF49F8006FB5C1 /* Build configuration list for PBXNativeTarget "BPMTap Watch AppTests" */;
 			buildPhases = (
-				909E03CB24663FC80090A580 /* Sources */,
-				909E03CC24663FC80090A580 /* Frameworks */,
-				909E03CD24663FC80090A580 /* Resources */,
+				4DD8A72A28DF49F8006FB5C1 /* Sources */,
+				4DD8A72B28DF49F8006FB5C1 /* Frameworks */,
+				4DD8A72C28DF49F8006FB5C1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4DD8A73028DF49F8006FB5C1 /* PBXTargetDependency */,
 			);
-			name = "BPMTap WatchKit Extension";
-			productName = "BPMTap WatchKit Extension";
-			productReference = 909E03CF24663FC80090A580 /* BPMTap WatchKit Extension.appex */;
-			productType = "com.apple.product-type.watchkit2-extension";
+			name = "BPMTap Watch AppTests";
+			productName = "BPMTap Watch AppTests";
+			productReference = 4DD8A72E28DF49F8006FB5C1 /* BPMTap Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4DD8A73728DF49F8006FB5C1 /* BPMTap Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DD8A74C28DF49F8006FB5C1 /* Build configuration list for PBXNativeTarget "BPMTap Watch AppUITests" */;
+			buildPhases = (
+				4DD8A73428DF49F8006FB5C1 /* Sources */,
+				4DD8A73528DF49F8006FB5C1 /* Frameworks */,
+				4DD8A73628DF49F8006FB5C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4DD8A73A28DF49F8006FB5C1 /* PBXTargetDependency */,
+			);
+			name = "BPMTap Watch AppUITests";
+			productName = "BPMTap Watch AppUITests";
+			productReference = 4DD8A73828DF49F8006FB5C1 /* BPMTap Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		909E03B624663FC60090A580 /* Project object */ = {
+		4DD8A71028DF49F7006FB5C1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1140;
-				LastUpgradeCheck = 1140;
-				ORGANIZATIONNAME = "Eric Masiello";
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
 				TargetAttributes = {
-					909E03BB24663FC60090A580 = {
-						CreatedOnToolsVersion = 11.4.1;
+					4DD8A71528DF49F7006FB5C1 = {
+						CreatedOnToolsVersion = 14.0;
 					};
-					909E03BF24663FC60090A580 = {
-						CreatedOnToolsVersion = 11.4.1;
+					4DD8A71B28DF49F7006FB5C1 = {
+						CreatedOnToolsVersion = 14.0;
 					};
-					909E03CE24663FC80090A580 = {
-						CreatedOnToolsVersion = 11.4.1;
+					4DD8A72D28DF49F8006FB5C1 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 4DD8A71B28DF49F7006FB5C1;
+					};
+					4DD8A73728DF49F8006FB5C1 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 4DD8A71B28DF49F7006FB5C1;
 					};
 				};
 			};
-			buildConfigurationList = 909E03B924663FC60090A580 /* Build configuration list for PBXProject "BPMTap" */;
-			compatibilityVersion = "Xcode 9.3";
+			buildConfigurationList = 4DD8A71328DF49F7006FB5C1 /* Build configuration list for PBXProject "BPMTap" */;
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 909E03B524663FC60090A580;
-			productRefGroup = 909E03BD24663FC60090A580 /* Products */;
+			mainGroup = 4DD8A70F28DF49F7006FB5C1;
+			productRefGroup = 4DD8A71728DF49F7006FB5C1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				909E03BB24663FC60090A580 /* BPMTap */,
-				909E03BF24663FC60090A580 /* BPMTap WatchKit App */,
-				909E03CE24663FC80090A580 /* BPMTap WatchKit Extension */,
+				4DD8A71528DF49F7006FB5C1 /* BPMTap */,
+				4DD8A71B28DF49F7006FB5C1 /* BPMTap Watch App */,
+				4DD8A72D28DF49F8006FB5C1 /* BPMTap Watch AppTests */,
+				4DD8A73728DF49F8006FB5C1 /* BPMTap Watch AppUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		909E03BA24663FC60090A580 /* Resources */ = {
+		4DD8A71428DF49F7006FB5C1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		909E03BE24663FC60090A580 /* Resources */ = {
+		4DD8A71A28DF49F7006FB5C1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				909E03C924663FC80090A580 /* Assets.xcassets in Resources */,
-				909E03C724663FC60090A580 /* Interface.storyboard in Resources */,
+				4DD8A72928DF49F8006FB5C1 /* Preview Assets.xcassets in Resources */,
+				4DD8A72628DF49F8006FB5C1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		909E03CD24663FC80090A580 /* Resources */ = {
+		4DD8A72C28DF49F8006FB5C1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				909E03E424663FC80090A580 /* Preview Assets.xcassets in Resources */,
-				909E03E124663FC80090A580 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DD8A73628DF49F8006FB5C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		909E03CB24663FC80090A580 /* Sources */ = {
+		4DD8A71828DF49F7006FB5C1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				909E03D724663FC80090A580 /* HostingController.swift in Sources */,
-				9012D8A624A0DF4300F5D319 /* Colors.swift in Sources */,
-				909E03D524663FC80090A580 /* ContentView.swift in Sources */,
-				909E03DB24663FC80090A580 /* NotificationController.swift in Sources */,
-				909E03D924663FC80090A580 /* ExtensionDelegate.swift in Sources */,
-				9081D83424AA38C200AA5201 /* LabelViewModifier.swift in Sources */,
-				9012D8A424A0139700F5D319 /* Hexagon.swift in Sources */,
-				90785EF824ABA86700F634E6 /* BPM.swift in Sources */,
-				9081D83624AA395700AA5201 /* Ring.swift in Sources */,
-				909E03DD24663FC80090A580 /* NotificationView.swift in Sources */,
-				9081D83824AA3A7B00AA5201 /* PaddedButtonStyle.swift in Sources */,
-				909E03DF24663FC80090A580 /* ComplicationController.swift in Sources */,
+				4DD8A72428DF49F7006FB5C1 /* ContentView.swift in Sources */,
+				4DF2BF3F28DF537B00DC8902 /* PaddedButtonStyle.swift in Sources */,
+				4DF2BF3E28DF537B00DC8902 /* LabelViewModifier.swift in Sources */,
+				4DF2BF3B28DF536600DC8902 /* Ring.swift in Sources */,
+				4DF2BF3328DF530100DC8902 /* Colors.swift in Sources */,
+				4DF2BF3128DF52F800DC8902 /* BPM.swift in Sources */,
+				4DD8A72228DF49F7006FB5C1 /* BPMTapApp.swift in Sources */,
+				4DF2BF3928DF536200DC8902 /* Hexagon.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DD8A72A28DF49F8006FB5C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DD8A73328DF49F8006FB5C1 /* BPMTap_Watch_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DD8A73428DF49F8006FB5C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DD8A73F28DF49F8006FB5C1 /* BPMTap_Watch_AppUITestsLaunchTests.swift in Sources */,
+				4DD8A73D28DF49F8006FB5C1 /* BPMTap_Watch_AppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		909E03C324663FC60090A580 /* PBXTargetDependency */ = {
+		4DD8A71F28DF49F7006FB5C1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 909E03BF24663FC60090A580 /* BPMTap WatchKit App */;
-			targetProxy = 909E03C224663FC60090A580 /* PBXContainerItemProxy */;
+			target = 4DD8A71B28DF49F7006FB5C1 /* BPMTap Watch App */;
+			targetProxy = 4DD8A71E28DF49F7006FB5C1 /* PBXContainerItemProxy */;
 		};
-		909E03D224663FC80090A580 /* PBXTargetDependency */ = {
+		4DD8A73028DF49F8006FB5C1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 909E03CE24663FC80090A580 /* BPMTap WatchKit Extension */;
-			targetProxy = 909E03D124663FC80090A580 /* PBXContainerItemProxy */;
+			target = 4DD8A71B28DF49F7006FB5C1 /* BPMTap Watch App */;
+			targetProxy = 4DD8A72F28DF49F8006FB5C1 /* PBXContainerItemProxy */;
+		};
+		4DD8A73A28DF49F8006FB5C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DD8A71B28DF49F7006FB5C1 /* BPMTap Watch App */;
+			targetProxy = 4DD8A73928DF49F8006FB5C1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		909E03C524663FC60090A580 /* Interface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				909E03C624663FC60090A580 /* Base */,
-			);
-			name = Interface.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
-		909E03E724663FC80090A580 /* Debug */ = {
+		4DD8A74028DF49F8006FB5C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -377,6 +401,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -404,20 +429,18 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		909E03E824663FC80090A580 /* Release */ = {
+		4DD8A74128DF49F8006FB5C1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -436,6 +459,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -456,169 +480,240 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		4DD8A74328DF49F8006FB5C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BPMTap Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = R6SSQ5A38J;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = BPMTap;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.synbydesign.BPMTap.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		4DD8A74428DF49F8006FB5C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BPMTap Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = R6SSQ5A38J;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = BPMTap;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.synbydesign.BPMTap.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		4DD8A74728DF49F8006FB5C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = R6SSQ5A38J;
+				INFOPLIST_KEY_CFBundleDisplayName = "Tap 4 BPM";
+				MARKETING_VERSION = 3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.synbydesign.BPMTap;
+				PRODUCT_NAME = "Tap 4 BPM";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4DD8A74828DF49F8006FB5C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = R6SSQ5A38J;
+				INFOPLIST_KEY_CFBundleDisplayName = "Tap 4 BPM";
+				MARKETING_VERSION = 3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.synbydesign.BPMTap;
+				PRODUCT_NAME = "Tap 4 BPM";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		909E03EA24663FC80090A580 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"BPMTap WatchKit Extension/Preview Content\"";
-				DEVELOPMENT_TEAM = R6SSQ5A38J;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "BPMTap WatchKit Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.3;
-				PRODUCT_BUNDLE_IDENTIFIER = com.synbydesign.BPMTap.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.0;
-			};
-			name = Debug;
-		};
-		909E03EB24663FC80090A580 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"BPMTap WatchKit Extension/Preview Content\"";
-				DEVELOPMENT_TEAM = R6SSQ5A38J;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "BPMTap WatchKit Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.3;
-				PRODUCT_BUNDLE_IDENTIFIER = com.synbydesign.BPMTap.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.0;
-			};
-			name = Release;
-		};
-		909E03EE24663FC80090A580 /* Debug */ = {
+		4DD8A74A28DF49F8006FB5C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R6SSQ5A38J;
-				IBSC_MODULE = BPMTap_WatchKit_Extension;
-				INFOPLIST_FILE = "BPMTap WatchKit App/Info.plist";
-				MARKETING_VERSION = 1.3;
-				PRODUCT_BUNDLE_IDENTIFIER = com.synbydesign.BPMTap.watchkitapp;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.synbydesign.BPMTap-Watch-AppTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BPMTap Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BPMTap Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
 		};
-		909E03EF24663FC80090A580 /* Release */ = {
+		4DD8A74B28DF49F8006FB5C1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R6SSQ5A38J;
-				IBSC_MODULE = BPMTap_WatchKit_Extension;
-				INFOPLIST_FILE = "BPMTap WatchKit App/Info.plist";
-				MARKETING_VERSION = 1.3;
-				PRODUCT_BUNDLE_IDENTIFIER = com.synbydesign.BPMTap.watchkitapp;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.synbydesign.BPMTap-Watch-AppTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BPMTap Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BPMTap Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;
 		};
-		909E03F224663FC80090A580 /* Debug */ = {
+		4DD8A74D28DF49F8006FB5C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R6SSQ5A38J;
-				MARKETING_VERSION = 1.3;
-				PRODUCT_BUNDLE_IDENTIFIER = com.synbydesign.BPMTap;
-				PRODUCT_NAME = "Tap 4 BPM";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.synbydesign.BPMTap-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "BPMTap Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
 		};
-		909E03F324663FC80090A580 /* Release */ = {
+		4DD8A74E28DF49F8006FB5C1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R6SSQ5A38J;
-				MARKETING_VERSION = 1.3;
-				PRODUCT_BUNDLE_IDENTIFIER = com.synbydesign.BPMTap;
-				PRODUCT_NAME = "Tap 4 BPM";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.synbydesign.BPMTap-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "BPMTap Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		909E03B924663FC60090A580 /* Build configuration list for PBXProject "BPMTap" */ = {
+		4DD8A71328DF49F7006FB5C1 /* Build configuration list for PBXProject "BPMTap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				909E03E724663FC80090A580 /* Debug */,
-				909E03E824663FC80090A580 /* Release */,
+				4DD8A74028DF49F8006FB5C1 /* Debug */,
+				4DD8A74128DF49F8006FB5C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		909E03E924663FC80090A580 /* Build configuration list for PBXNativeTarget "BPMTap WatchKit Extension" */ = {
+		4DD8A74228DF49F8006FB5C1 /* Build configuration list for PBXNativeTarget "BPMTap Watch App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				909E03EA24663FC80090A580 /* Debug */,
-				909E03EB24663FC80090A580 /* Release */,
+				4DD8A74328DF49F8006FB5C1 /* Debug */,
+				4DD8A74428DF49F8006FB5C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		909E03ED24663FC80090A580 /* Build configuration list for PBXNativeTarget "BPMTap WatchKit App" */ = {
+		4DD8A74628DF49F8006FB5C1 /* Build configuration list for PBXNativeTarget "BPMTap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				909E03EE24663FC80090A580 /* Debug */,
-				909E03EF24663FC80090A580 /* Release */,
+				4DD8A74728DF49F8006FB5C1 /* Debug */,
+				4DD8A74828DF49F8006FB5C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		909E03F124663FC80090A580 /* Build configuration list for PBXNativeTarget "BPMTap" */ = {
+		4DD8A74928DF49F8006FB5C1 /* Build configuration list for PBXNativeTarget "BPMTap Watch AppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				909E03F224663FC80090A580 /* Debug */,
-				909E03F324663FC80090A580 /* Release */,
+				4DD8A74A28DF49F8006FB5C1 /* Debug */,
+				4DD8A74B28DF49F8006FB5C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DD8A74C28DF49F8006FB5C1 /* Build configuration list for PBXNativeTarget "BPMTap Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DD8A74D28DF49F8006FB5C1 /* Debug */,
+				4DD8A74E28DF49F8006FB5C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 909E03B624663FC60090A580 /* Project object */;
+	rootObject = 4DD8A71028DF49F7006FB5C1 /* Project object */;
 }
