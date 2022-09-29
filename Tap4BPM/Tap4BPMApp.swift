@@ -1,6 +1,6 @@
 //
-//  BPMTapApp.swift
-//  BPMTap Watch App
+//  Tap4BPMApp.swift
+//  Tap4BPM
 //
 //  Created by Eric Masiello on 9/24/22.
 //
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct BPMTap_Watch_AppApp: App {
+struct Tap4BPMApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

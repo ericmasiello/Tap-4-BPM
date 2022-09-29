@@ -8,13 +8,14 @@
 import SwiftUI
 
 extension Button {
-    func paddedCircleStyle(padding: CGFloat) -> some View {
-        self.buttonStyle(PaddedButtonStyle(padding: padding))
+    func paddedCircleStyle(padding: CGFloat, strokeWidth: CGFloat) -> some View {
+        self.buttonStyle(PaddedButtonStyle(padding: padding, strokeWidth: strokeWidth))
     }
 }
 
 struct PaddedButtonStyle: ButtonStyle {
     var padding: CGFloat
+    var strokeWidth: CGFloat
     
     func makeBody(configuration: Self.Configuration) -> some View {
         configuration.label
@@ -23,7 +24,9 @@ struct PaddedButtonStyle: ButtonStyle {
                 Circle()
         )
             .background(
-                Ring(isHighlighted: configuration.isPressed, shape: Circle())
+                Ring(isHighlighted: configuration.isPressed, shape: Circle(), strokeWidth: strokeWidth)
+//                    .foregroundColor(Color.white)
+//                    .opacity(0.85)
             )
     }
 }
@@ -32,6 +35,6 @@ struct PaddedButtonStyle_Previews: PreviewProvider {
     static var previews: some View {
         Button(action: {}) {
             Text("Yo")
-        }.paddedCircleStyle(padding: 30)
+        }.paddedCircleStyle(padding: 30, strokeWidth: 4)
     }
 }

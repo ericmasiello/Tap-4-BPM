@@ -1,24 +1,60 @@
 //
-//  ContentView.swift
-//  BPMTap WatchKit Extension
+//  AppView.swift
+//  Tap4BPM
 //
-//  Created by Eric Masiello on 4/19/20.
-//  Copyright © 2020 Eric Masiello. All rights reserved.
+//  Created by Eric Masiello on 9/25/22.
 //
 
 import SwiftUI
 
-let HEX_SIZE: CGFloat = 40
-let BUTTON_PADDING: CGFloat = 30
-let BUTTON_STROKE_WIDTH: CGFloat = 4
-let TOTAL_CLICKS = 4
+enum AppSize {
+    case small
+    case large
+    case xLarge
+}
 
-struct ContentView: View {
+struct AppView: View {
     @State private var isToggled = false
     @State private var clicks = 0
     @State private var start = DispatchTime.now()
     @State private var end = DispatchTime.now()
     @State private var bpm: Double = 0
+    var size: AppSize = .large
+    
+    var hexSize: CGFloat {
+        get {
+            switch self.size {
+            case .small:
+                return 40
+            case .large:
+                return 120
+            case .xLarge:
+                return 180
+            }
+        }
+    }
+    
+    var buttonPadding: CGFloat {
+        get {
+            switch self.size {
+            case .xLarge:
+                return 40
+            default:
+                return 30
+            }
+        }
+    }
+    
+    var buttonStrokeWidth: CGFloat {
+        get {
+            switch self.size {
+            case .xLarge:
+                return 6
+            default:
+                return 4
+            }
+        }
+    }
     
     func handleClick() {
         withAnimation(.linear(duration: 0.35), {
@@ -41,7 +77,7 @@ struct ContentView: View {
     }
     
     func calcLabelHeight(_ height: CGFloat) -> CGFloat {
-        return (height - (HEX_SIZE + (BUTTON_PADDING * 2) + (BUTTON_STROKE_WIDTH * 2)) / 2)
+        return (height - (self.hexSize + (self.buttonPadding * 2) + (self.buttonStrokeWidth * 2)) / 2)
     }
     
     var body: some View {
@@ -57,32 +93,28 @@ struct ContentView: View {
                     
                     Button(action: self.handleClick) {
                         Hexagon()
-                            .frame(width: HEX_SIZE, height: HEX_SIZE)
+                            .foregroundColor(Color.white)
+                            .frame(width: self.hexSize, height: self.hexSize)
                             .opacity(0.85)
                             .overlay(Hexagon().stroke(Color.brandPurple, lineWidth: 3))
                             .scaleEffect(self.scale())
                             .animation(.spring(response: 0.3, dampingFraction: 0.4, blendDuration: 0))
                             .overlay(
+                                // TODO: move this to a component
                                 Text(String(self.clicks))
-                                    .foregroundColor(Color.darkEnd)
+                                    .font(self.size == .large ? .title2 : .caption)
+                                    .fontWeight(self.size == .large ? .heavy : .regular)
+                                    .foregroundColor(Color.brandPurple)
+                                    
+                                    
                             )
                         
                     }
-                    .paddedCircleStyle(padding: BUTTON_PADDING)
+                    .paddedCircleStyle(padding: self.buttonPadding, strokeWidth: self.buttonStrokeWidth)
                     
-                    if (self.clicks == 0 && self.bpm == 0) {
-                        Text("Begin Tapping")
-                            .footerLabel(maxHeight: self.calcLabelHeight(geometry.size.height))
-                        
-                    } else if self.clicks > 0 && self.clicks < 4 {
-                        Text("- - -")
-                            .footerLabel(maxHeight: self.calcLabelHeight(geometry.size.height))
-                    } else {
-                        Text(String(format: "%.2f BPM", self.bpm))
-                            .fontWeight(.semibold)
-                            .font(.caption)
-                            .footerLabel(maxHeight: self.calcLabelHeight(geometry.size.height))
-                    }
+                    TapLabel(clicks: clicks, size: size, bpm: bpm)
+                        .footerLabel(maxHeight: self.calcLabelHeight(geometry.size.height))
+                    
                 }
                 .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
                 
@@ -91,12 +123,13 @@ struct ContentView: View {
         
         .edgesIgnoringSafeArea(.all)
         .navigationBarTitle("Tap 4 BPM")
+        // ensure white icons for battery/time/signal
+        .preferredColorScheme(.dark)
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct AppView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        AppView(size: .xLarge)
     }
 }
-

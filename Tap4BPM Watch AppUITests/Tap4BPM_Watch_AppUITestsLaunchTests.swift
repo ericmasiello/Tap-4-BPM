@@ -1,13 +1,13 @@
 //
-//  BPMTap_Watch_AppUITestsLaunchTests.swift
-//  BPMTap Watch AppUITests
+//  Tap4BPM_Watch_AppUITestsLaunchTests.swift
+//  Tap4BPM Watch AppUITests
 //
 //  Created by Eric Masiello on 9/24/22.
 //
 
 import XCTest
 
-final class BPMTap_Watch_AppUITestsLaunchTests: XCTestCase {
+final class Tap4BPM_Watch_AppUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

@@ -1,13 +1,13 @@
 //
-//  BPMTap_Watch_AppUITests.swift
-//  BPMTap Watch AppUITests
+//  Tap4BPM_Watch_AppUITests.swift
+//  Tap4BPM Watch AppUITests
 //
 //  Created by Eric Masiello on 9/24/22.
 //
 
 import XCTest
 
-final class BPMTap_Watch_AppUITests: XCTestCase {
+final class Tap4BPM_Watch_AppUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
