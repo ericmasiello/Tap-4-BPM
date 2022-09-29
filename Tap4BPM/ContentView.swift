@@ -14,6 +14,8 @@ struct ContentView: View {
         get {
             switch (viewSize.width) {
             case 0..<500:
+                return .small
+            case 500..<750:
                 return .large
             default:
                 return .xLarge
