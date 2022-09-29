@@ -23,9 +23,7 @@ struct ContentView: View {
     
     var body: some View {
         GeometryReader { geometry in
-            AppView(size: derivedSize).onAppear(perform: {
-                print(geometry.size.width)
-            }).onAppear {
+            AppView(size: derivedSize).onAppear {
                 viewSize = geometry.size
               }.onChange(of: geometry.size) { newSize in
                   viewSize = newSize
