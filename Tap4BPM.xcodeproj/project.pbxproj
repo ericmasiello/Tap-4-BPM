@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4D671D7228E5A57E0031F813 /* TapLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D671D7128E5A57E0031F813 /* TapLabel.swift */; };
-		4D671D7328E5A57E0031F813 /* TapLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D671D7128E5A57E0031F813 /* TapLabel.swift */; };
-		4D671D7428E5A57E0031F813 /* TapLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D671D7128E5A57E0031F813 /* TapLabel.swift */; };
-		4D671D7528E5A57E0031F813 /* TapLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D671D7128E5A57E0031F813 /* TapLabel.swift */; };
-		4D671D7628E5A57E0031F813 /* TapLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D671D7128E5A57E0031F813 /* TapLabel.swift */; };
-		4D671D7728E5A57E0031F813 /* TapLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D671D7128E5A57E0031F813 /* TapLabel.swift */; };
+		4D212AB128E5BD930064FB23 /* TapLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D212AB028E5BD930064FB23 /* TapLabel.swift */; };
+		4D212AB228E5BD930064FB23 /* TapLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D212AB028E5BD930064FB23 /* TapLabel.swift */; };
+		4D212AB328E5BD930064FB23 /* TapLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D212AB028E5BD930064FB23 /* TapLabel.swift */; };
+		4D212AB428E5BD930064FB23 /* TapLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D212AB028E5BD930064FB23 /* TapLabel.swift */; };
+		4D212AB528E5BD930064FB23 /* TapLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D212AB028E5BD930064FB23 /* TapLabel.swift */; };
+		4D212AB628E5BD930064FB23 /* TapLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D212AB028E5BD930064FB23 /* TapLabel.swift */; };
+		4D671D7228E5A57E0031F813 /* StatusLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D671D7128E5A57E0031F813 /* StatusLabel.swift */; };
+		4D671D7328E5A57E0031F813 /* StatusLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D671D7128E5A57E0031F813 /* StatusLabel.swift */; };
+		4D671D7428E5A57E0031F813 /* StatusLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D671D7128E5A57E0031F813 /* StatusLabel.swift */; };
+		4D671D7528E5A57E0031F813 /* StatusLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D671D7128E5A57E0031F813 /* StatusLabel.swift */; };
+		4D671D7628E5A57E0031F813 /* StatusLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D671D7128E5A57E0031F813 /* StatusLabel.swift */; };
+		4D671D7728E5A57E0031F813 /* StatusLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D671D7128E5A57E0031F813 /* StatusLabel.swift */; };
 		4DC411AB28E084210046227B /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC411AA28E084210046227B /* AppView.swift */; };
 		4DC411AC28E084210046227B /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC411AA28E084210046227B /* AppView.swift */; };
 		4DC411AD28E084210046227B /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC411AA28E084210046227B /* AppView.swift */; };
@@ -131,7 +137,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4D671D7128E5A57E0031F813 /* TapLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapLabel.swift; sourceTree = "<group>"; };
+		4D212AB028E5BD930064FB23 /* TapLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapLabel.swift; sourceTree = "<group>"; };
+		4D671D7128E5A57E0031F813 /* StatusLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusLabel.swift; sourceTree = "<group>"; };
 		4DC411AA28E084210046227B /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		4DDFF78528DF9A3300E9493F /* Tap4BPM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tap4BPM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DDFF78828DF9A3300E9493F /* Tap4BPMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tap4BPMApp.swift; sourceTree = "<group>"; };
@@ -318,7 +325,8 @@
 				4DDFF7E928DF9ABB00E9493F /* PaddedButtonStyle.swift */,
 				4DDFF7EA28DF9ABB00E9493F /* Ring.swift */,
 				4DC411AA28E084210046227B /* AppView.swift */,
-				4D671D7128E5A57E0031F813 /* TapLabel.swift */,
+				4D671D7128E5A57E0031F813 /* StatusLabel.swift */,
+				4D212AB028E5BD930064FB23 /* TapLabel.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -557,7 +565,8 @@
 			files = (
 				4DDFF78B28DF9A3300E9493F /* ContentView.swift in Sources */,
 				4DDFF7ED28DF9ABC00E9493F /* LabelViewModifier.swift in Sources */,
-				4D671D7228E5A57E0031F813 /* TapLabel.swift in Sources */,
+				4D212AB128E5BD930064FB23 /* TapLabel.swift in Sources */,
+				4D671D7228E5A57E0031F813 /* StatusLabel.swift in Sources */,
 				4DDFF7EF28DF9ABC00E9493F /* PaddedButtonStyle.swift in Sources */,
 				4DC411AB28E084210046227B /* AppView.swift in Sources */,
 				4DDFF7EE28DF9ABC00E9493F /* Hexagon.swift in Sources */,
@@ -575,11 +584,12 @@
 			files = (
 				4DDFF79A28DF9A3400E9493F /* Tap4BPMTests.swift in Sources */,
 				4DDFF7FE28DF9C0000E9493F /* Consts.swift in Sources */,
+				4D212AB228E5BD930064FB23 /* TapLabel.swift in Sources */,
 				4DC411AC28E084210046227B /* AppView.swift in Sources */,
 				4DDFF80D28DF9C1A00E9493F /* PaddedButtonStyle.swift in Sources */,
 				4DDFF80828DF9C1500E9493F /* LabelViewModifier.swift in Sources */,
 				4DDFF7F928DF9BFB00E9493F /* BPM.swift in Sources */,
-				4D671D7328E5A57E0031F813 /* TapLabel.swift in Sources */,
+				4D671D7328E5A57E0031F813 /* StatusLabel.swift in Sources */,
 				4DDFF81228DF9C1F00E9493F /* Ring.swift in Sources */,
 				4DDFF7F428DF9BF400E9493F /* Colors.swift in Sources */,
 				4DDFF80328DF9C0D00E9493F /* Hexagon.swift in Sources */,
@@ -592,7 +602,8 @@
 			files = (
 				4DDFF7A428DF9A3400E9493F /* Tap4BPMUITests.swift in Sources */,
 				4DDFF80E28DF9C1B00E9493F /* PaddedButtonStyle.swift in Sources */,
-				4D671D7428E5A57E0031F813 /* TapLabel.swift in Sources */,
+				4D212AB328E5BD930064FB23 /* TapLabel.swift in Sources */,
+				4D671D7428E5A57E0031F813 /* StatusLabel.swift in Sources */,
 				4DDFF80928DF9C1600E9493F /* LabelViewModifier.swift in Sources */,
 				4DDFF7FF28DF9C0100E9493F /* Consts.swift in Sources */,
 				4DDFF80428DF9C0E00E9493F /* Hexagon.swift in Sources */,
@@ -610,7 +621,8 @@
 			files = (
 				4DDFF7B328DF9A3400E9493F /* ContentView.swift in Sources */,
 				4DDFF80F28DF9C1B00E9493F /* PaddedButtonStyle.swift in Sources */,
-				4D671D7528E5A57E0031F813 /* TapLabel.swift in Sources */,
+				4D212AB428E5BD930064FB23 /* TapLabel.swift in Sources */,
+				4D671D7528E5A57E0031F813 /* StatusLabel.swift in Sources */,
 				4DDFF80A28DF9C1600E9493F /* LabelViewModifier.swift in Sources */,
 				4DDFF80028DF9C0200E9493F /* Consts.swift in Sources */,
 				4DC411AE28E084210046227B /* AppView.swift in Sources */,
@@ -628,11 +640,12 @@
 			files = (
 				4DDFF7C228DF9A3400E9493F /* Tap4BPM_Watch_AppTests.swift in Sources */,
 				4DDFF80128DF9C0200E9493F /* Consts.swift in Sources */,
+				4D212AB528E5BD930064FB23 /* TapLabel.swift in Sources */,
 				4DC411AF28E084210046227B /* AppView.swift in Sources */,
 				4DDFF81028DF9C1C00E9493F /* PaddedButtonStyle.swift in Sources */,
 				4DDFF80B28DF9C1700E9493F /* LabelViewModifier.swift in Sources */,
 				4DDFF7FC28DF9BFD00E9493F /* BPM.swift in Sources */,
-				4D671D7628E5A57E0031F813 /* TapLabel.swift in Sources */,
+				4D671D7628E5A57E0031F813 /* StatusLabel.swift in Sources */,
 				4DDFF81528DF9C2100E9493F /* Ring.swift in Sources */,
 				4DDFF7F728DF9BF600E9493F /* Colors.swift in Sources */,
 				4DDFF80628DF9C0F00E9493F /* Hexagon.swift in Sources */,
@@ -645,7 +658,8 @@
 			files = (
 				4DDFF7CC28DF9A3400E9493F /* Tap4BPM_Watch_AppUITests.swift in Sources */,
 				4DDFF81128DF9C1C00E9493F /* PaddedButtonStyle.swift in Sources */,
-				4D671D7728E5A57E0031F813 /* TapLabel.swift in Sources */,
+				4D212AB628E5BD930064FB23 /* TapLabel.swift in Sources */,
+				4D671D7728E5A57E0031F813 /* StatusLabel.swift in Sources */,
 				4DDFF80C28DF9C1800E9493F /* LabelViewModifier.swift in Sources */,
 				4DDFF80228DF9C0300E9493F /* Consts.swift in Sources */,
 				4DDFF80728DF9C0F00E9493F /* Hexagon.swift in Sources */,

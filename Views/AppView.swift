@@ -98,12 +98,10 @@ struct AppView: View {
                             .opacity(0.85)
                             .overlay(Hexagon().stroke(Color.brandPurple, lineWidth: 3))
                             .scaleEffect(self.scale())
+                        // TODO: figure out how to avoid the weird animation when you resize the screen on Mac or iPad
                             .animation(.spring(response: 0.3, dampingFraction: 0.4, blendDuration: 0))
                             .overlay(
-                                // TODO: move this to a component
-                                Text(String(self.clicks))
-                                    .font(self.size == .large ? .title2 : .caption)
-                                    .fontWeight(self.size == .large ? .heavy : .regular)
+                                TapLabel(clicks: clicks, size: size)
                                     .foregroundColor(Color.brandPurple)
                                     
                                     
@@ -112,7 +110,7 @@ struct AppView: View {
                     }
                     .paddedCircleStyle(padding: self.buttonPadding, strokeWidth: self.buttonStrokeWidth)
                     
-                    TapLabel(clicks: clicks, size: size, bpm: bpm)
+                    StatusLabel(clicks: clicks, size: size, bpm: bpm)
                         .footerLabel(maxHeight: self.calcLabelHeight(geometry.size.height))
                     
                 }
@@ -130,6 +128,11 @@ struct AppView: View {
 
 struct AppView_Previews: PreviewProvider {
     static var previews: some View {
-        AppView(size: .xLarge)
+        Group {
+            AppView(size: .small).frame(width: 224, height: 184)
+            AppView(size: .large).frame(width: 330, height: 600)
+            AppView(size: .xLarge)
+        }
+        
     }
 }
