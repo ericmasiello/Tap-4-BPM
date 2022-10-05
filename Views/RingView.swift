@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct Ring<S: Shape>: View {
+struct RingView<S: Shape>: View {
     var isHighlighted: Bool
     var shape: S
     var strokeWidth: CGFloat
@@ -26,8 +26,8 @@ struct Ring<S: Shape>: View {
 struct Ring_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            Ring(isHighlighted: false, shape: Circle(), strokeWidth: 4.0)
-            Ring(isHighlighted: true, shape: Circle(), strokeWidth: 4.0)
+            RingView(isHighlighted: false, shape: Circle(), strokeWidth: 4.0)
+            RingView(isHighlighted: true, shape: Circle(), strokeWidth: 4.0)
         }
         
     }

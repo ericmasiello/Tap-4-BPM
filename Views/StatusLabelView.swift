@@ -13,7 +13,7 @@ enum TapState {
     case ready
 }
 
-struct StatusLabel: View {
+struct StatusLabelView: View {
     var clicks: Int
     var size: AppSize
     var bpm: Double = 0.0
@@ -72,22 +72,22 @@ struct StatusLabel_Previews: PreviewProvider {
         VStack(alignment: .center){
             ScrollView {
                 Group {
-                    StatusLabel(clicks: 0, size: .small).padding()
-                    StatusLabel(clicks: 2, size: .small).padding()
-                    StatusLabel(clicks: 4, size: .small, bpm: 172.2).padding()
+                    StatusLabelView(clicks: 0, size: .small).padding()
+                    StatusLabelView(clicks: 2, size: .small).padding()
+                    StatusLabelView(clicks: 4, size: .small, bpm: 172.2).padding()
                     Text("----")
                 }
                 Group {
-                    StatusLabel(clicks: 0, size: .large).padding()
-                    StatusLabel(clicks: 2, size: .large).padding()
-                    StatusLabel(clicks: 4, size: .large, bpm: 172.2).padding()
+                    StatusLabelView(clicks: 0, size: .large).padding()
+                    StatusLabelView(clicks: 2, size: .large).padding()
+                    StatusLabelView(clicks: 4, size: .large, bpm: 172.2).padding()
                     Text("----")
                 }
                 
                 Group {
-                    StatusLabel(clicks: 0, size: .xLarge).padding()
-                    StatusLabel(clicks: 2, size: .xLarge).padding()
-                    StatusLabel(clicks: 4, size: .xLarge, bpm: 172.2).padding()
+                    StatusLabelView(clicks: 0, size: .xLarge).padding()
+                    StatusLabelView(clicks: 2, size: .xLarge).padding()
+                    StatusLabelView(clicks: 4, size: .xLarge, bpm: 172.2).padding()
                 }
             }
         }

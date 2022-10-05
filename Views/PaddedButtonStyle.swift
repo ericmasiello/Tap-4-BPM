@@ -24,9 +24,7 @@ struct PaddedButtonStyle: ButtonStyle {
                 Circle()
         )
             .background(
-                Ring(isHighlighted: configuration.isPressed, shape: Circle(), strokeWidth: strokeWidth)
-//                    .foregroundColor(Color.white)
-//                    .opacity(0.85)
+                RingView(isHighlighted: configuration.isPressed, shape: Circle(), strokeWidth: strokeWidth)
             )
     }
 }

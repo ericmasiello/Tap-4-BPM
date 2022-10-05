@@ -92,16 +92,16 @@ struct AppView: View {
                     Spacer().frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: self.calcLabelHeight(geometry.size.height))
                     
                     Button(action: self.handleClick) {
-                        Hexagon()
+                        HexagonView()
                             .foregroundColor(Color.white)
                             .frame(width: self.hexSize, height: self.hexSize)
                             .opacity(0.85)
-                            .overlay(Hexagon().stroke(Color.brandPurple, lineWidth: 3))
+                            .overlay(HexagonView().stroke(Color.brandPurple, lineWidth: 3))
                             .scaleEffect(self.scale())
                         // TODO: figure out how to avoid the weird animation when you resize the screen on Mac or iPad
                             .animation(.spring(response: 0.3, dampingFraction: 0.4, blendDuration: 0))
                             .overlay(
-                                TapLabel(clicks: clicks, size: size)
+                                TapLabelView(clicks: clicks, size: size)
                                     .foregroundColor(Color.brandPurple)
                                     
                                     
@@ -109,8 +109,9 @@ struct AppView: View {
                         
                     }
                     .paddedCircleStyle(padding: self.buttonPadding, strokeWidth: self.buttonStrokeWidth)
+                    .animation(.easeIn)
                     
-                    StatusLabel(clicks: clicks, size: size, bpm: bpm)
+                    StatusLabelView(clicks: clicks, size: size, bpm: bpm)
                         .footerLabel(maxHeight: self.calcLabelHeight(geometry.size.height))
                     
                 }

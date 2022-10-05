@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct Hexagon: Shape {
+struct HexagonView: Shape {
     func path(in rect: CGRect) -> Path {
         var path = Path()
         
@@ -34,18 +34,18 @@ struct Hexagon_Previews: PreviewProvider {
         
     static var previews: some View {
         Group {
-          Hexagon()
+          HexagonView()
             .foregroundColor(Color.blue)
             .frame(width: 100, height: 100)
             .overlay(
-                Hexagon()
+                HexagonView()
                     .stroke(Color.orange, lineWidth: 10)
             )
-        Hexagon()
+        HexagonView()
             .foregroundColor(Color.orange)
             .frame(width: 100, height: 100)
             .overlay(
-                Hexagon()
+                HexagonView()
                     .stroke(Color.blue, lineWidth: 10)
             )
         }

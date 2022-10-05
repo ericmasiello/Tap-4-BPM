@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TapLabel: View {
+struct TapLabelView: View {
     var clicks: Int
     var size: AppSize
     
@@ -41,9 +41,9 @@ struct TapLabel: View {
 struct TapLabel_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
-            TapLabel(clicks: 3, size: .small)
-            TapLabel(clicks: 3, size: .large)
-            TapLabel(clicks: 3, size: .xLarge)
+            TapLabelView(clicks: 3, size: .small)
+            TapLabelView(clicks: 3, size: .large)
+            TapLabelView(clicks: 3, size: .xLarge)
         }
         
     }
