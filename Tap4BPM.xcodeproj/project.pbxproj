@@ -1,0 +1,1203 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D212AB128E5BD930064FB23 /* TapLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D212AB028E5BD930064FB23 /* TapLabelView.swift */; };
+		4D212AB228E5BD930064FB23 /* TapLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D212AB028E5BD930064FB23 /* TapLabelView.swift */; };
+		4D212AB328E5BD930064FB23 /* TapLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D212AB028E5BD930064FB23 /* TapLabelView.swift */; };
+		4D212AB428E5BD930064FB23 /* TapLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D212AB028E5BD930064FB23 /* TapLabelView.swift */; };
+		4D212AB528E5BD930064FB23 /* TapLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D212AB028E5BD930064FB23 /* TapLabelView.swift */; };
+		4D212AB628E5BD930064FB23 /* TapLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D212AB028E5BD930064FB23 /* TapLabelView.swift */; };
+		4D671D7228E5A57E0031F813 /* StatusLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D671D7128E5A57E0031F813 /* StatusLabelView.swift */; };
+		4D671D7328E5A57E0031F813 /* StatusLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D671D7128E5A57E0031F813 /* StatusLabelView.swift */; };
+		4D671D7428E5A57E0031F813 /* StatusLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D671D7128E5A57E0031F813 /* StatusLabelView.swift */; };
+		4D671D7528E5A57E0031F813 /* StatusLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D671D7128E5A57E0031F813 /* StatusLabelView.swift */; };
+		4D671D7628E5A57E0031F813 /* StatusLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D671D7128E5A57E0031F813 /* StatusLabelView.swift */; };
+		4D671D7728E5A57E0031F813 /* StatusLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D671D7128E5A57E0031F813 /* StatusLabelView.swift */; };
+		4DC411AB28E084210046227B /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC411AA28E084210046227B /* AppView.swift */; };
+		4DC411AC28E084210046227B /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC411AA28E084210046227B /* AppView.swift */; };
+		4DC411AD28E084210046227B /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC411AA28E084210046227B /* AppView.swift */; };
+		4DC411AE28E084210046227B /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC411AA28E084210046227B /* AppView.swift */; };
+		4DC411AF28E084210046227B /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC411AA28E084210046227B /* AppView.swift */; };
+		4DC411B028E084210046227B /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC411AA28E084210046227B /* AppView.swift */; };
+		4DDFF78928DF9A3300E9493F /* Tap4BPMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFF78828DF9A3300E9493F /* Tap4BPMApp.swift */; };
+		4DDFF78B28DF9A3300E9493F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFF78A28DF9A3300E9493F /* ContentView.swift */; };
+		4DDFF78D28DF9A3300E9493F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DDFF78C28DF9A3300E9493F /* Assets.xcassets */; };
+		4DDFF79028DF9A3300E9493F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DDFF78F28DF9A3300E9493F /* Preview Assets.xcassets */; };
+		4DDFF79A28DF9A3400E9493F /* Tap4BPMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFF79928DF9A3400E9493F /* Tap4BPMTests.swift */; };
+		4DDFF7A428DF9A3400E9493F /* Tap4BPMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFF7A328DF9A3400E9493F /* Tap4BPMUITests.swift */; };
+		4DDFF7A628DF9A3400E9493F /* Tap4BPMUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFF7A528DF9A3400E9493F /* Tap4BPMUITestsLaunchTests.swift */; };
+		4DDFF7AC28DF9A3400E9493F /* Tap4BPM Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 4DDFF7AB28DF9A3400E9493F /* Tap4BPM Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4DDFF7B128DF9A3400E9493F /* Tap4BPMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFF7B028DF9A3400E9493F /* Tap4BPMApp.swift */; };
+		4DDFF7B328DF9A3400E9493F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFF7B228DF9A3400E9493F /* ContentView.swift */; };
+		4DDFF7B528DF9A3400E9493F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DDFF7B428DF9A3400E9493F /* Assets.xcassets */; };
+		4DDFF7B828DF9A3400E9493F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DDFF7B728DF9A3400E9493F /* Preview Assets.xcassets */; };
+		4DDFF7C228DF9A3400E9493F /* Tap4BPM_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFF7C128DF9A3400E9493F /* Tap4BPM_Watch_AppTests.swift */; };
+		4DDFF7CC28DF9A3400E9493F /* Tap4BPM_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFF7CB28DF9A3400E9493F /* Tap4BPM_Watch_AppUITests.swift */; };
+		4DDFF7CE28DF9A3400E9493F /* Tap4BPM_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFF7CD28DF9A3400E9493F /* Tap4BPM_Watch_AppUITestsLaunchTests.swift */; };
+		4DDFF7EB28DF9ABC00E9493F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFF7E528DF9ABA00E9493F /* Colors.swift */; };
+		4DDFF7EC28DF9ABC00E9493F /* BPM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFF7E628DF9ABB00E9493F /* BPM.swift */; };
+		4DDFF7ED28DF9ABC00E9493F /* LabelViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFF7E728DF9ABB00E9493F /* LabelViewModifier.swift */; };
+		4DDFF7EE28DF9ABC00E9493F /* HexagonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFF7E828DF9ABB00E9493F /* HexagonView.swift */; };
+		4DDFF7EF28DF9ABC00E9493F /* PaddedButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFF7E928DF9ABB00E9493F /* PaddedButtonStyle.swift */; };
+		4DDFF7F028DF9ABC00E9493F /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFF7EA28DF9ABB00E9493F /* RingView.swift */; };
+		4DDFF7F328DF9B3900E9493F /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFF7F228DF9B3900E9493F /* Consts.swift */; };
+		4DDFF7F428DF9BF400E9493F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFF7E528DF9ABA00E9493F /* Colors.swift */; };
+		4DDFF7F528DF9BF500E9493F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFF7E528DF9ABA00E9493F /* Colors.swift */; };
+		4DDFF7F628DF9BF600E9493F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFF7E528DF9ABA00E9493F /* Colors.swift */; };
+		4DDFF7F728DF9BF600E9493F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFF7E528DF9ABA00E9493F /* Colors.swift */; };
+		4DDFF7F828DF9BF700E9493F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFF7E528DF9ABA00E9493F /* Colors.swift */; };
+		4DDFF7F928DF9BFB00E9493F /* BPM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFF7E628DF9ABB00E9493F /* BPM.swift */; };
+		4DDFF7FA28DF9BFC00E9493F /* BPM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFF7E628DF9ABB00E9493F /* BPM.swift */; };
+		4DDFF7FB28DF9BFC00E9493F /* BPM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFF7E628DF9ABB00E9493F /* BPM.swift */; };
+		4DDFF7FC28DF9BFD00E9493F /* BPM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFF7E628DF9ABB00E9493F /* BPM.swift */; };
+		4DDFF7FD28DF9BFE00E9493F /* BPM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFF7E628DF9ABB00E9493F /* BPM.swift */; };
+		4DDFF7FE28DF9C0000E9493F /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFF7F228DF9B3900E9493F /* Consts.swift */; };
+		4DDFF7FF28DF9C0100E9493F /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFF7F228DF9B3900E9493F /* Consts.swift */; };
+		4DDFF80028DF9C0200E9493F /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFF7F228DF9B3900E9493F /* Consts.swift */; };
+		4DDFF80128DF9C0200E9493F /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFF7F228DF9B3900E9493F /* Consts.swift */; };
+		4DDFF80228DF9C0300E9493F /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFF7F228DF9B3900E9493F /* Consts.swift */; };
+		4DDFF80328DF9C0D00E9493F /* HexagonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFF7E828DF9ABB00E9493F /* HexagonView.swift */; };
+		4DDFF80428DF9C0E00E9493F /* HexagonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFF7E828DF9ABB00E9493F /* HexagonView.swift */; };
+		4DDFF80528DF9C0E00E9493F /* HexagonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFF7E828DF9ABB00E9493F /* HexagonView.swift */; };
+		4DDFF80628DF9C0F00E9493F /* HexagonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFF7E828DF9ABB00E9493F /* HexagonView.swift */; };
+		4DDFF80728DF9C0F00E9493F /* HexagonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFF7E828DF9ABB00E9493F /* HexagonView.swift */; };
+		4DDFF80828DF9C1500E9493F /* LabelViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFF7E728DF9ABB00E9493F /* LabelViewModifier.swift */; };
+		4DDFF80928DF9C1600E9493F /* LabelViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFF7E728DF9ABB00E9493F /* LabelViewModifier.swift */; };
+		4DDFF80A28DF9C1600E9493F /* LabelViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFF7E728DF9ABB00E9493F /* LabelViewModifier.swift */; };
+		4DDFF80B28DF9C1700E9493F /* LabelViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFF7E728DF9ABB00E9493F /* LabelViewModifier.swift */; };
+		4DDFF80C28DF9C1800E9493F /* LabelViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFF7E728DF9ABB00E9493F /* LabelViewModifier.swift */; };
+		4DDFF80D28DF9C1A00E9493F /* PaddedButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFF7E928DF9ABB00E9493F /* PaddedButtonStyle.swift */; };
+		4DDFF80E28DF9C1B00E9493F /* PaddedButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFF7E928DF9ABB00E9493F /* PaddedButtonStyle.swift */; };
+		4DDFF80F28DF9C1B00E9493F /* PaddedButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFF7E928DF9ABB00E9493F /* PaddedButtonStyle.swift */; };
+		4DDFF81028DF9C1C00E9493F /* PaddedButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFF7E928DF9ABB00E9493F /* PaddedButtonStyle.swift */; };
+		4DDFF81128DF9C1C00E9493F /* PaddedButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFF7E928DF9ABB00E9493F /* PaddedButtonStyle.swift */; };
+		4DDFF81228DF9C1F00E9493F /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFF7EA28DF9ABB00E9493F /* RingView.swift */; };
+		4DDFF81328DF9C2000E9493F /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFF7EA28DF9ABB00E9493F /* RingView.swift */; };
+		4DDFF81428DF9C2000E9493F /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFF7EA28DF9ABB00E9493F /* RingView.swift */; };
+		4DDFF81528DF9C2100E9493F /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFF7EA28DF9ABB00E9493F /* RingView.swift */; };
+		4DDFF81628DF9C2100E9493F /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFF7EA28DF9ABB00E9493F /* RingView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4DDFF79628DF9A3400E9493F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DDFF77D28DF9A3300E9493F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DDFF78428DF9A3300E9493F;
+			remoteInfo = Tap4BPM;
+		};
+		4DDFF7A028DF9A3400E9493F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DDFF77D28DF9A3300E9493F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DDFF78428DF9A3300E9493F;
+			remoteInfo = Tap4BPM;
+		};
+		4DDFF7AD28DF9A3400E9493F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DDFF77D28DF9A3300E9493F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DDFF7AA28DF9A3400E9493F;
+			remoteInfo = "Tap4BPM Watch App";
+		};
+		4DDFF7BE28DF9A3400E9493F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DDFF77D28DF9A3300E9493F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DDFF7AA28DF9A3400E9493F;
+			remoteInfo = "Tap4BPM Watch App";
+		};
+		4DDFF7C828DF9A3400E9493F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DDFF77D28DF9A3300E9493F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DDFF7AA28DF9A3400E9493F;
+			remoteInfo = "Tap4BPM Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4DDFF7D428DF9A3400E9493F /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				4DDFF7AC28DF9A3400E9493F /* Tap4BPM Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4D212AB028E5BD930064FB23 /* TapLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapLabelView.swift; sourceTree = "<group>"; };
+		4D3E8EF028EE111B0098DBA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4D671D7128E5A57E0031F813 /* StatusLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusLabelView.swift; sourceTree = "<group>"; };
+		4DC411AA28E084210046227B /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		4DDFF78528DF9A3300E9493F /* Tap4BPM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tap4BPM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DDFF78828DF9A3300E9493F /* Tap4BPMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tap4BPMApp.swift; sourceTree = "<group>"; };
+		4DDFF78A28DF9A3300E9493F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4DDFF78C28DF9A3300E9493F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4DDFF78F28DF9A3300E9493F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4DDFF79528DF9A3400E9493F /* Tap4BPMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tap4BPMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DDFF79928DF9A3400E9493F /* Tap4BPMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tap4BPMTests.swift; sourceTree = "<group>"; };
+		4DDFF79F28DF9A3400E9493F /* Tap4BPMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tap4BPMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DDFF7A328DF9A3400E9493F /* Tap4BPMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tap4BPMUITests.swift; sourceTree = "<group>"; };
+		4DDFF7A528DF9A3400E9493F /* Tap4BPMUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tap4BPMUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4DDFF7AB28DF9A3400E9493F /* Tap4BPM Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tap4BPM Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DDFF7B028DF9A3400E9493F /* Tap4BPMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tap4BPMApp.swift; sourceTree = "<group>"; };
+		4DDFF7B228DF9A3400E9493F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4DDFF7B428DF9A3400E9493F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4DDFF7B728DF9A3400E9493F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4DDFF7BD28DF9A3400E9493F /* Tap4BPM Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tap4BPM Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DDFF7C128DF9A3400E9493F /* Tap4BPM_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tap4BPM_Watch_AppTests.swift; sourceTree = "<group>"; };
+		4DDFF7C728DF9A3400E9493F /* Tap4BPM Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tap4BPM Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DDFF7CB28DF9A3400E9493F /* Tap4BPM_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tap4BPM_Watch_AppUITests.swift; sourceTree = "<group>"; };
+		4DDFF7CD28DF9A3400E9493F /* Tap4BPM_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tap4BPM_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4DDFF7E528DF9ABA00E9493F /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		4DDFF7E628DF9ABB00E9493F /* BPM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BPM.swift; sourceTree = "<group>"; };
+		4DDFF7E728DF9ABB00E9493F /* LabelViewModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelViewModifier.swift; sourceTree = "<group>"; };
+		4DDFF7E828DF9ABB00E9493F /* HexagonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexagonView.swift; sourceTree = "<group>"; };
+		4DDFF7E928DF9ABB00E9493F /* PaddedButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaddedButtonStyle.swift; sourceTree = "<group>"; };
+		4DDFF7EA28DF9ABB00E9493F /* RingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RingView.swift; sourceTree = "<group>"; };
+		4DDFF7F228DF9B3900E9493F /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
+		4DDFF81B28DFA88D00E9493F /* Tap4BPM-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Tap4BPM-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4DDFF78228DF9A3300E9493F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DDFF79228DF9A3400E9493F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DDFF79C28DF9A3400E9493F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DDFF7A828DF9A3400E9493F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DDFF7BA28DF9A3400E9493F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DDFF7C428DF9A3400E9493F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4DDFF77C28DF9A3300E9493F = {
+			isa = PBXGroup;
+			children = (
+				4DDFF7F128DF9B2400E9493F /* Core */,
+				4DDFF7E428DF9A8700E9493F /* Views */,
+				4DDFF78728DF9A3300E9493F /* Tap4BPM */,
+				4DDFF79828DF9A3400E9493F /* Tap4BPMTests */,
+				4DDFF7A228DF9A3400E9493F /* Tap4BPMUITests */,
+				4DDFF7AF28DF9A3400E9493F /* Tap4BPM Watch App */,
+				4DDFF7C028DF9A3400E9493F /* Tap4BPM Watch AppTests */,
+				4DDFF7CA28DF9A3400E9493F /* Tap4BPM Watch AppUITests */,
+				4DDFF78628DF9A3300E9493F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4DDFF78628DF9A3300E9493F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4DDFF78528DF9A3300E9493F /* Tap4BPM.app */,
+				4DDFF79528DF9A3400E9493F /* Tap4BPMTests.xctest */,
+				4DDFF79F28DF9A3400E9493F /* Tap4BPMUITests.xctest */,
+				4DDFF7AB28DF9A3400E9493F /* Tap4BPM Watch App.app */,
+				4DDFF7BD28DF9A3400E9493F /* Tap4BPM Watch AppTests.xctest */,
+				4DDFF7C728DF9A3400E9493F /* Tap4BPM Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4DDFF78728DF9A3300E9493F /* Tap4BPM */ = {
+			isa = PBXGroup;
+			children = (
+				4D3E8EF028EE111B0098DBA8 /* Info.plist */,
+				4DDFF78828DF9A3300E9493F /* Tap4BPMApp.swift */,
+				4DDFF78A28DF9A3300E9493F /* ContentView.swift */,
+				4DDFF78C28DF9A3300E9493F /* Assets.xcassets */,
+				4DDFF78E28DF9A3300E9493F /* Preview Content */,
+			);
+			path = Tap4BPM;
+			sourceTree = "<group>";
+		};
+		4DDFF78E28DF9A3300E9493F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4DDFF78F28DF9A3300E9493F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4DDFF79828DF9A3400E9493F /* Tap4BPMTests */ = {
+			isa = PBXGroup;
+			children = (
+				4DDFF79928DF9A3400E9493F /* Tap4BPMTests.swift */,
+			);
+			path = Tap4BPMTests;
+			sourceTree = "<group>";
+		};
+		4DDFF7A228DF9A3400E9493F /* Tap4BPMUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4DDFF7A328DF9A3400E9493F /* Tap4BPMUITests.swift */,
+				4DDFF7A528DF9A3400E9493F /* Tap4BPMUITestsLaunchTests.swift */,
+			);
+			path = Tap4BPMUITests;
+			sourceTree = "<group>";
+		};
+		4DDFF7AF28DF9A3400E9493F /* Tap4BPM Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				4DDFF81B28DFA88D00E9493F /* Tap4BPM-Watch-App-Info.plist */,
+				4DDFF7B028DF9A3400E9493F /* Tap4BPMApp.swift */,
+				4DDFF7B228DF9A3400E9493F /* ContentView.swift */,
+				4DDFF7B428DF9A3400E9493F /* Assets.xcassets */,
+				4DDFF7B628DF9A3400E9493F /* Preview Content */,
+			);
+			path = "Tap4BPM Watch App";
+			sourceTree = "<group>";
+		};
+		4DDFF7B628DF9A3400E9493F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4DDFF7B728DF9A3400E9493F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4DDFF7C028DF9A3400E9493F /* Tap4BPM Watch AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				4DDFF7C128DF9A3400E9493F /* Tap4BPM_Watch_AppTests.swift */,
+			);
+			path = "Tap4BPM Watch AppTests";
+			sourceTree = "<group>";
+		};
+		4DDFF7CA28DF9A3400E9493F /* Tap4BPM Watch AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4DDFF7CB28DF9A3400E9493F /* Tap4BPM_Watch_AppUITests.swift */,
+				4DDFF7CD28DF9A3400E9493F /* Tap4BPM_Watch_AppUITestsLaunchTests.swift */,
+			);
+			path = "Tap4BPM Watch AppUITests";
+			sourceTree = "<group>";
+		};
+		4DDFF7E428DF9A8700E9493F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4DDFF7E828DF9ABB00E9493F /* HexagonView.swift */,
+				4DDFF7E728DF9ABB00E9493F /* LabelViewModifier.swift */,
+				4DDFF7E928DF9ABB00E9493F /* PaddedButtonStyle.swift */,
+				4DDFF7EA28DF9ABB00E9493F /* RingView.swift */,
+				4DC411AA28E084210046227B /* AppView.swift */,
+				4D671D7128E5A57E0031F813 /* StatusLabelView.swift */,
+				4D212AB028E5BD930064FB23 /* TapLabelView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4DDFF7F128DF9B2400E9493F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				4DDFF7E528DF9ABA00E9493F /* Colors.swift */,
+				4DDFF7E628DF9ABB00E9493F /* BPM.swift */,
+				4DDFF7F228DF9B3900E9493F /* Consts.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4DDFF78428DF9A3300E9493F /* Tap4BPM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DDFF7D528DF9A3400E9493F /* Build configuration list for PBXNativeTarget "Tap4BPM" */;
+			buildPhases = (
+				4DDFF78128DF9A3300E9493F /* Sources */,
+				4DDFF78228DF9A3300E9493F /* Frameworks */,
+				4DDFF78328DF9A3300E9493F /* Resources */,
+				4DDFF7D428DF9A3400E9493F /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4DDFF7AE28DF9A3400E9493F /* PBXTargetDependency */,
+			);
+			name = Tap4BPM;
+			productName = Tap4BPM;
+			productReference = 4DDFF78528DF9A3300E9493F /* Tap4BPM.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4DDFF79428DF9A3400E9493F /* Tap4BPMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DDFF7D828DF9A3400E9493F /* Build configuration list for PBXNativeTarget "Tap4BPMTests" */;
+			buildPhases = (
+				4DDFF79128DF9A3400E9493F /* Sources */,
+				4DDFF79228DF9A3400E9493F /* Frameworks */,
+				4DDFF79328DF9A3400E9493F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4DDFF79728DF9A3400E9493F /* PBXTargetDependency */,
+			);
+			name = Tap4BPMTests;
+			productName = Tap4BPMTests;
+			productReference = 4DDFF79528DF9A3400E9493F /* Tap4BPMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4DDFF79E28DF9A3400E9493F /* Tap4BPMUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DDFF7DB28DF9A3400E9493F /* Build configuration list for PBXNativeTarget "Tap4BPMUITests" */;
+			buildPhases = (
+				4DDFF79B28DF9A3400E9493F /* Sources */,
+				4DDFF79C28DF9A3400E9493F /* Frameworks */,
+				4DDFF79D28DF9A3400E9493F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4DDFF7A128DF9A3400E9493F /* PBXTargetDependency */,
+			);
+			name = Tap4BPMUITests;
+			productName = Tap4BPMUITests;
+			productReference = 4DDFF79F28DF9A3400E9493F /* Tap4BPMUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		4DDFF7AA28DF9A3400E9493F /* Tap4BPM Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DDFF7D128DF9A3400E9493F /* Build configuration list for PBXNativeTarget "Tap4BPM Watch App" */;
+			buildPhases = (
+				4DDFF7A728DF9A3400E9493F /* Sources */,
+				4DDFF7A828DF9A3400E9493F /* Frameworks */,
+				4DDFF7A928DF9A3400E9493F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tap4BPM Watch App";
+			productName = "Tap4BPM Watch App";
+			productReference = 4DDFF7AB28DF9A3400E9493F /* Tap4BPM Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4DDFF7BC28DF9A3400E9493F /* Tap4BPM Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DDFF7DE28DF9A3400E9493F /* Build configuration list for PBXNativeTarget "Tap4BPM Watch AppTests" */;
+			buildPhases = (
+				4DDFF7B928DF9A3400E9493F /* Sources */,
+				4DDFF7BA28DF9A3400E9493F /* Frameworks */,
+				4DDFF7BB28DF9A3400E9493F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4DDFF7BF28DF9A3400E9493F /* PBXTargetDependency */,
+			);
+			name = "Tap4BPM Watch AppTests";
+			productName = "Tap4BPM Watch AppTests";
+			productReference = 4DDFF7BD28DF9A3400E9493F /* Tap4BPM Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4DDFF7C628DF9A3400E9493F /* Tap4BPM Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DDFF7E128DF9A3400E9493F /* Build configuration list for PBXNativeTarget "Tap4BPM Watch AppUITests" */;
+			buildPhases = (
+				4DDFF7C328DF9A3400E9493F /* Sources */,
+				4DDFF7C428DF9A3400E9493F /* Frameworks */,
+				4DDFF7C528DF9A3400E9493F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4DDFF7C928DF9A3400E9493F /* PBXTargetDependency */,
+			);
+			name = "Tap4BPM Watch AppUITests";
+			productName = "Tap4BPM Watch AppUITests";
+			productReference = 4DDFF7C728DF9A3400E9493F /* Tap4BPM Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4DDFF77D28DF9A3300E9493F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					4DDFF78428DF9A3300E9493F = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					4DDFF79428DF9A3400E9493F = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 4DDFF78428DF9A3300E9493F;
+					};
+					4DDFF79E28DF9A3400E9493F = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 4DDFF78428DF9A3300E9493F;
+					};
+					4DDFF7AA28DF9A3400E9493F = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					4DDFF7BC28DF9A3400E9493F = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 4DDFF7AA28DF9A3400E9493F;
+					};
+					4DDFF7C628DF9A3400E9493F = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 4DDFF7AA28DF9A3400E9493F;
+					};
+				};
+			};
+			buildConfigurationList = 4DDFF78028DF9A3300E9493F /* Build configuration list for PBXProject "Tap4BPM" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4DDFF77C28DF9A3300E9493F;
+			productRefGroup = 4DDFF78628DF9A3300E9493F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4DDFF78428DF9A3300E9493F /* Tap4BPM */,
+				4DDFF79428DF9A3400E9493F /* Tap4BPMTests */,
+				4DDFF79E28DF9A3400E9493F /* Tap4BPMUITests */,
+				4DDFF7AA28DF9A3400E9493F /* Tap4BPM Watch App */,
+				4DDFF7BC28DF9A3400E9493F /* Tap4BPM Watch AppTests */,
+				4DDFF7C628DF9A3400E9493F /* Tap4BPM Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4DDFF78328DF9A3300E9493F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DDFF79028DF9A3300E9493F /* Preview Assets.xcassets in Resources */,
+				4DDFF78D28DF9A3300E9493F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DDFF79328DF9A3400E9493F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DDFF79D28DF9A3400E9493F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DDFF7A928DF9A3400E9493F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DDFF7B828DF9A3400E9493F /* Preview Assets.xcassets in Resources */,
+				4DDFF7B528DF9A3400E9493F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DDFF7BB28DF9A3400E9493F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DDFF7C528DF9A3400E9493F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4DDFF78128DF9A3300E9493F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DDFF78B28DF9A3300E9493F /* ContentView.swift in Sources */,
+				4DDFF7ED28DF9ABC00E9493F /* LabelViewModifier.swift in Sources */,
+				4D212AB128E5BD930064FB23 /* TapLabelView.swift in Sources */,
+				4D671D7228E5A57E0031F813 /* StatusLabelView.swift in Sources */,
+				4DDFF7EF28DF9ABC00E9493F /* PaddedButtonStyle.swift in Sources */,
+				4DC411AB28E084210046227B /* AppView.swift in Sources */,
+				4DDFF7EE28DF9ABC00E9493F /* HexagonView.swift in Sources */,
+				4DDFF7EB28DF9ABC00E9493F /* Colors.swift in Sources */,
+				4DDFF7F028DF9ABC00E9493F /* RingView.swift in Sources */,
+				4DDFF78928DF9A3300E9493F /* Tap4BPMApp.swift in Sources */,
+				4DDFF7F328DF9B3900E9493F /* Consts.swift in Sources */,
+				4DDFF7EC28DF9ABC00E9493F /* BPM.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DDFF79128DF9A3400E9493F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DDFF79A28DF9A3400E9493F /* Tap4BPMTests.swift in Sources */,
+				4DDFF7FE28DF9C0000E9493F /* Consts.swift in Sources */,
+				4D212AB228E5BD930064FB23 /* TapLabelView.swift in Sources */,
+				4DC411AC28E084210046227B /* AppView.swift in Sources */,
+				4DDFF80D28DF9C1A00E9493F /* PaddedButtonStyle.swift in Sources */,
+				4DDFF80828DF9C1500E9493F /* LabelViewModifier.swift in Sources */,
+				4DDFF7F928DF9BFB00E9493F /* BPM.swift in Sources */,
+				4D671D7328E5A57E0031F813 /* StatusLabelView.swift in Sources */,
+				4DDFF81228DF9C1F00E9493F /* RingView.swift in Sources */,
+				4DDFF7F428DF9BF400E9493F /* Colors.swift in Sources */,
+				4DDFF80328DF9C0D00E9493F /* HexagonView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DDFF79B28DF9A3400E9493F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DDFF7A428DF9A3400E9493F /* Tap4BPMUITests.swift in Sources */,
+				4DDFF80E28DF9C1B00E9493F /* PaddedButtonStyle.swift in Sources */,
+				4D212AB328E5BD930064FB23 /* TapLabelView.swift in Sources */,
+				4D671D7428E5A57E0031F813 /* StatusLabelView.swift in Sources */,
+				4DDFF80928DF9C1600E9493F /* LabelViewModifier.swift in Sources */,
+				4DDFF7FF28DF9C0100E9493F /* Consts.swift in Sources */,
+				4DDFF80428DF9C0E00E9493F /* HexagonView.swift in Sources */,
+				4DDFF7F528DF9BF500E9493F /* Colors.swift in Sources */,
+				4DDFF7A628DF9A3400E9493F /* Tap4BPMUITestsLaunchTests.swift in Sources */,
+				4DDFF81328DF9C2000E9493F /* RingView.swift in Sources */,
+				4DC411AD28E084210046227B /* AppView.swift in Sources */,
+				4DDFF7FA28DF9BFC00E9493F /* BPM.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DDFF7A728DF9A3400E9493F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DDFF7B328DF9A3400E9493F /* ContentView.swift in Sources */,
+				4DDFF80F28DF9C1B00E9493F /* PaddedButtonStyle.swift in Sources */,
+				4D212AB428E5BD930064FB23 /* TapLabelView.swift in Sources */,
+				4D671D7528E5A57E0031F813 /* StatusLabelView.swift in Sources */,
+				4DDFF80A28DF9C1600E9493F /* LabelViewModifier.swift in Sources */,
+				4DDFF80028DF9C0200E9493F /* Consts.swift in Sources */,
+				4DC411AE28E084210046227B /* AppView.swift in Sources */,
+				4DDFF80528DF9C0E00E9493F /* HexagonView.swift in Sources */,
+				4DDFF7F628DF9BF600E9493F /* Colors.swift in Sources */,
+				4DDFF7B128DF9A3400E9493F /* Tap4BPMApp.swift in Sources */,
+				4DDFF81428DF9C2000E9493F /* RingView.swift in Sources */,
+				4DDFF7FB28DF9BFC00E9493F /* BPM.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DDFF7B928DF9A3400E9493F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DDFF7C228DF9A3400E9493F /* Tap4BPM_Watch_AppTests.swift in Sources */,
+				4DDFF80128DF9C0200E9493F /* Consts.swift in Sources */,
+				4D212AB528E5BD930064FB23 /* TapLabelView.swift in Sources */,
+				4DC411AF28E084210046227B /* AppView.swift in Sources */,
+				4DDFF81028DF9C1C00E9493F /* PaddedButtonStyle.swift in Sources */,
+				4DDFF80B28DF9C1700E9493F /* LabelViewModifier.swift in Sources */,
+				4DDFF7FC28DF9BFD00E9493F /* BPM.swift in Sources */,
+				4D671D7628E5A57E0031F813 /* StatusLabelView.swift in Sources */,
+				4DDFF81528DF9C2100E9493F /* RingView.swift in Sources */,
+				4DDFF7F728DF9BF600E9493F /* Colors.swift in Sources */,
+				4DDFF80628DF9C0F00E9493F /* HexagonView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DDFF7C328DF9A3400E9493F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DDFF7CC28DF9A3400E9493F /* Tap4BPM_Watch_AppUITests.swift in Sources */,
+				4DDFF81128DF9C1C00E9493F /* PaddedButtonStyle.swift in Sources */,
+				4D212AB628E5BD930064FB23 /* TapLabelView.swift in Sources */,
+				4D671D7728E5A57E0031F813 /* StatusLabelView.swift in Sources */,
+				4DDFF80C28DF9C1800E9493F /* LabelViewModifier.swift in Sources */,
+				4DDFF80228DF9C0300E9493F /* Consts.swift in Sources */,
+				4DDFF80728DF9C0F00E9493F /* HexagonView.swift in Sources */,
+				4DDFF7F828DF9BF700E9493F /* Colors.swift in Sources */,
+				4DDFF7CE28DF9A3400E9493F /* Tap4BPM_Watch_AppUITestsLaunchTests.swift in Sources */,
+				4DDFF81628DF9C2100E9493F /* RingView.swift in Sources */,
+				4DC411B028E084210046227B /* AppView.swift in Sources */,
+				4DDFF7FD28DF9BFE00E9493F /* BPM.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4DDFF79728DF9A3400E9493F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DDFF78428DF9A3300E9493F /* Tap4BPM */;
+			targetProxy = 4DDFF79628DF9A3400E9493F /* PBXContainerItemProxy */;
+		};
+		4DDFF7A128DF9A3400E9493F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DDFF78428DF9A3300E9493F /* Tap4BPM */;
+			targetProxy = 4DDFF7A028DF9A3400E9493F /* PBXContainerItemProxy */;
+		};
+		4DDFF7AE28DF9A3400E9493F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DDFF7AA28DF9A3400E9493F /* Tap4BPM Watch App */;
+			targetProxy = 4DDFF7AD28DF9A3400E9493F /* PBXContainerItemProxy */;
+		};
+		4DDFF7BF28DF9A3400E9493F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DDFF7AA28DF9A3400E9493F /* Tap4BPM Watch App */;
+			targetProxy = 4DDFF7BE28DF9A3400E9493F /* PBXContainerItemProxy */;
+		};
+		4DDFF7C928DF9A3400E9493F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DDFF7AA28DF9A3400E9493F /* Tap4BPM Watch App */;
+			targetProxy = 4DDFF7C828DF9A3400E9493F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4DDFF7CF28DF9A3400E9493F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4DDFF7D028DF9A3400E9493F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		4DDFF7D228DF9A3400E9493F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Tap4BPM Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = R6SSQ5A38J;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Tap4BPM-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Tap 4 BPM";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.synbydesign.BPMTap;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 4.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.synbydesign.BPMTap.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		4DDFF7D328DF9A3400E9493F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Tap4BPM Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = R6SSQ5A38J;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Tap4BPM-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Tap 4 BPM";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.synbydesign.BPMTap;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 4.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.synbydesign.BPMTap.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		4DDFF7D628DF9A3400E9493F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Tap4BPM/Preview Content\"";
+				DEVELOPMENT_TEAM = R6SSQ5A38J;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Tap4BPM/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Tap 4 BPM";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 4.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.synbydesign.BPMTap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4DDFF7D728DF9A3400E9493F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Tap4BPM/Preview Content\"";
+				DEVELOPMENT_TEAM = R6SSQ5A38J;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Tap4BPM/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Tap 4 BPM";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 4.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.synbydesign.BPMTap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4DDFF7D928DF9A3400E9493F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R6SSQ5A38J;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.synbydesign.BPMTapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tap4BPM.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Tap4BPM";
+			};
+			name = Debug;
+		};
+		4DDFF7DA28DF9A3400E9493F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R6SSQ5A38J;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.synbydesign.BPMTapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tap4BPM.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Tap4BPM";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4DDFF7DC28DF9A3400E9493F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R6SSQ5A38J;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.synbydesign.BPMTapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Tap4BPM;
+			};
+			name = Debug;
+		};
+		4DDFF7DD28DF9A3400E9493F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R6SSQ5A38J;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.synbydesign.BPMTapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Tap4BPM;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4DDFF7DF28DF9A3400E9493F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R6SSQ5A38J;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.synbydesign.BPMTap-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tap4BPM Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Tap4BPM Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		4DDFF7E028DF9A3400E9493F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R6SSQ5A38J;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.synbydesign.BPMTap-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tap4BPM Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Tap4BPM Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		4DDFF7E228DF9A3400E9493F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R6SSQ5A38J;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.synbydesign.BPMTap-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Tap4BPM Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		4DDFF7E328DF9A3400E9493F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R6SSQ5A38J;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.synbydesign.BPMTap-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Tap4BPM Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4DDFF78028DF9A3300E9493F /* Build configuration list for PBXProject "Tap4BPM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DDFF7CF28DF9A3400E9493F /* Debug */,
+				4DDFF7D028DF9A3400E9493F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DDFF7D128DF9A3400E9493F /* Build configuration list for PBXNativeTarget "Tap4BPM Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DDFF7D228DF9A3400E9493F /* Debug */,
+				4DDFF7D328DF9A3400E9493F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DDFF7D528DF9A3400E9493F /* Build configuration list for PBXNativeTarget "Tap4BPM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DDFF7D628DF9A3400E9493F /* Debug */,
+				4DDFF7D728DF9A3400E9493F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DDFF7D828DF9A3400E9493F /* Build configuration list for PBXNativeTarget "Tap4BPMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DDFF7D928DF9A3400E9493F /* Debug */,
+				4DDFF7DA28DF9A3400E9493F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DDFF7DB28DF9A3400E9493F /* Build configuration list for PBXNativeTarget "Tap4BPMUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DDFF7DC28DF9A3400E9493F /* Debug */,
+				4DDFF7DD28DF9A3400E9493F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DDFF7DE28DF9A3400E9493F /* Build configuration list for PBXNativeTarget "Tap4BPM Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DDFF7DF28DF9A3400E9493F /* Debug */,
+				4DDFF7E028DF9A3400E9493F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DDFF7E128DF9A3400E9493F /* Build configuration list for PBXNativeTarget "Tap4BPM Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DDFF7E228DF9A3400E9493F /* Debug */,
+				4DDFF7E328DF9A3400E9493F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4DDFF77D28DF9A3300E9493F /* Project object */;
+}
