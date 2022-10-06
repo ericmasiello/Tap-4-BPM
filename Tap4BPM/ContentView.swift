@@ -13,9 +13,9 @@ struct ContentView: View {
     var derivedSize: AppSize {
         get {
             switch (viewSize.width) {
-            case 0..<400:
+            case 0..<375:
                 return .small
-            case 400..<750:
+            case 375..<750:
                 return .large
             default:
                 return .xLarge
